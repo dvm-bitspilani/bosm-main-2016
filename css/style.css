@@ -9,5 +9,8 @@ html,body{
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-image: url('../img/football.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../img/football_field.svg');
 }
