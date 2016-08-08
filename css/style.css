@@ -3,7 +3,7 @@ html,body{
   margin:0;
 }
 
-#loader{
+.loader{
   margin: 0;
   position: absolute;
   top: 0;
@@ -13,4 +13,45 @@ html,body{
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url('../img/football_field.svg');
+}
+
+
+.logo{
+  position: relative;
+  top:calc(50% - 98px);
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img{
+  width:150px;
+}
+
+
+.textBox{
+  position: absolute;
+  bottom:10vh;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.textField{
+  display: flex;
+  justify-content: center;
+}
+
+.textField p{
+  cursor: pointer;
+  background:white;
+  padding: 13px;
+  margin: 0;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.textField p:hover{
+  box-shadow: 0 0 8px black;
 }
