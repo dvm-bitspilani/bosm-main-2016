@@ -1,3 +1,7 @@
+@font-face {
+  font-family:
+}
+
 html,body{
   overflow: hidden;
   margin:0;
@@ -54,4 +58,42 @@ html,body{
 
 .textField p:hover{
   box-shadow: 0 0 8px black;
+}
+
+
+.zoomIn{
+  transition: all 0.5s;
+  transform: scale(1.8);
+}
+
+
+.zoomOut{
+  transition: all 1s;
+  transform: scale(0);
+}
+.nav{
+  width: 30%;
+  transform:scale(0);
+}
+
+.navAnimate{
+  transition: all 0.6s;
+  transform:scale(1);
+}
+
+.nav img{
+  position: relative;
+width: 72px;
+left: calc(50% - 40px);
+}
+
+
+.swim{
+  position: absolute;
+  z-index: -3;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background: url('../img/swimming_pool.svg')
 }
