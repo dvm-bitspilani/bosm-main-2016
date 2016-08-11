@@ -97,7 +97,7 @@ left: calc(50% - 40px);
   width:100vw;
   height:100vh;
   background: url('../img/swimming_pool.svg');
-  background-size: 100% 100%;
+  background-size: contain;
 }
 
 .swim_container{
@@ -110,7 +110,7 @@ left: calc(50% - 40px);
 	
 	position:relative;
 	height: 20%;
-	overflow:auto;
+	overflow:hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
