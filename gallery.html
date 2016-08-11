@@ -3,12 +3,12 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 </head>
 <body>
 	<div class="chessboard">
 		<div class="flexrow">
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -18,7 +18,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -28,7 +28,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -38,7 +38,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -48,7 +48,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -58,7 +58,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -68,7 +68,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -78,7 +78,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -88,7 +88,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -98,7 +98,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -108,7 +108,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -118,7 +118,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -128,7 +128,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -138,7 +138,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="white tile flip">
+			<div class="white tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -148,7 +148,7 @@
 					</div> 
 				</div>
 			</div>
-			<div class="black tile flip">
+			<div class="black tile flip" onclick="lighten(this)">
 				<div class="card"> 
 					<div class="face front"> 
 
@@ -159,7 +159,11 @@
 				</div>
 			</div>
 		</div>
+		<a href="#_" class="lightbox" onclick="$(this).fadeOut('fast')">
+			<img src="img/gallery.jpg">
+		</a>
 	</div>
+
 
 	<script type="text/javascript">
 		$('.flip').mouseover(function(){
@@ -184,6 +188,15 @@
 				},3000);
 			},4000);
 		});
+
+		function lighten (imgdiv) {
+			var imgurl = $(imgdiv).find('.back').css('background-image');
+			var cleanup = /\"|\'|\)/g;
+			imgurl = imgurl.split('/').pop().replace(cleanup, '');
+			$('.lightbox img').attr('src', 'img/'+imgurl);
+			$('.lightbox').fadeIn('slow');
+
+		}
 
 	</script>
 </body>
