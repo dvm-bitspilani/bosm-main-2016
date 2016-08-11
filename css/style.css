@@ -322,3 +322,16 @@ left: calc(50% - 40px);
 }
 
 /*==================================================*/
+
+.about {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+}
+
+#billiards {
+  background: url('../img/billiards.svg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}

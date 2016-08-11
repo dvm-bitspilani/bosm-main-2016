@@ -180,11 +180,30 @@
 				var flip=Math.floor(Math.random() * (15 - 1 + 1)) + 1;
 				// console.log(flip);
 
-				var rantile=$('.flexrow div:nth-child('+flip+') div');
+				var rantile1=$('.flexrow div:nth-child('+flip+') div');
 				// console.log(rantile);
-				rantile.addClass('flipped');
+				rantile1.addClass('flipped');
 				setTimeout(function(){
-					rantile.removeClass('flipped');
+					rantile1.removeClass('flipped');
+				},3000);
+
+				do {
+				var flip2=Math.floor(Math.random() * (15 - 1 + 1)) + 1;
+				} while (flip===flip2);
+				var rantile2=$('.flexrow div:nth-child('+flip2+') div');
+				// console.log(rantile);
+				rantile2.addClass('flipped');
+				setTimeout(function(){
+					rantile2.removeClass('flipped');
+				},3000);
+				do {
+				var flip3=Math.floor(Math.random() * (15 - 1 + 1)) + 1;
+				} while (flip===flip2 && flip2===flip3);
+				var rantile3=$('.flexrow div:nth-child('+flip3+') div');
+				// console.log(rantile);
+				rantile3.addClass('flipped');
+				setTimeout(function(){
+					rantile3.removeClass('flipped');
 				},3000);
 			},4000);
 		});
