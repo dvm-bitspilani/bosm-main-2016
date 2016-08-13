@@ -384,14 +384,27 @@ html,body{
   .aHead {
     font-size: 2.3em;
   }
-.aCont {
-      /*position: initial;*/
+  .aCont {
+    /*position: initial;*/
     bottom: 0px;
     top: 0;
     padding-right: 20px;
     /* height: 249px; */
     /* margin-bottom: inherit; */
     height: 40vh;
+  }
+
 }
 
+.sm_svg {
+  background-image: url(../img/slot_bg.svg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#slotmachine {
+  height: 94vh;
+  margin: 3vh auto;
 }
