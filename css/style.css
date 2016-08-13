@@ -6,6 +6,7 @@ html,body{
   overflow: hidden;
   /*overflow-x: hidden;*/
   margin:0;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .loader{
@@ -84,8 +85,8 @@ html,body{
 
 .nav img{
   position: relative;
-width: 72px;
-left: calc(50% - 40px);
+  width: 72px;
+  left: calc(50% - 40px);
 }
 
 
@@ -140,56 +141,56 @@ left: calc(50% - 40px);
 
 #tube2 {
 	
-    -webkit-animation-delay: .5s; 
-    animation-delay: .5s;	
+  -webkit-animation-delay: .5s; 
+  animation-delay: .5s;	
 }
 #tube3 {
 	
-    -webkit-animation-delay: 1s; 
-    animation-delay: 1s;	
+  -webkit-animation-delay: 1s; 
+  animation-delay: 1s;	
 }
 #tube4 {
 	
-    -webkit-animation-delay: 1.5s; 
-    animation-delay: 1.5s;	
+  -webkit-animation-delay: 1.5s; 
+  animation-delay: 1.5s;	
 }
 #tube5 {
 	
-    -webkit-animation-delay: 2s; 
-    animation-delay: 2s;	
+  -webkit-animation-delay: 2s; 
+  animation-delay: 2s;	
 }
 
 .floating{
-    float: left;
-    -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 2.5s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 2.5s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
+  float: left;
+  -webkit-animation-name: Floatingx;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Floating;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: ease-in-out;
 
 }
 
 @-webkit-keyframes Floatingx{
-    from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 10px);}
-    to {-webkit-transform: translate(0, -0px);    }    
+  from {-webkit-transform:translate(0, 0px);}
+  65% {-webkit-transform:translate(0, 10px);}
+  to {-webkit-transform: translate(0, -0px);    }    
 }
-    
+
 @-moz-keyframes Floating{
-    from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 10px);}
-    to {-moz-transform: translate(0, -0px);}    
+  from {-moz-transform:translate(0, 0px);}
+  65% {-moz-transform:translate(0, 10px);}
+  to {-moz-transform: translate(0, -0px);}    
 }
 
 /*=================FLIP TILE===================*/
 
 .flip {
   -webkit-perspective: 800;
-    position: relative;
-    margin: 0;
+  position: relative;
+  margin: 0;
 }
 
 .card {
@@ -212,25 +213,25 @@ left: calc(50% - 40px);
   position: absolute;
   -webkit-backface-visibility: hidden ;
   z-index: 2;
-    font-family: Georgia;
-    font-size: 3em;
-    text-align: center;
-    line-height: 200px;
+  font-family: Georgia;
+  font-size: 3em;
+  text-align: center;
+  line-height: 200px;
 }
 .flip .card .front {
   position: absolute;
   z-index: 1;
-    /*background: black;*/
-    color: white;
-    cursor: pointer;
+  /*background: black;*/
+  color: white;
+  cursor: pointer;
 }
 .flip .card .back {
   -webkit-transform: rotatex(-180deg);
-    color: black;
-    cursor: pointer;
-    background-image: url('../img/gallery.jpg');
-    background-position: center center;
-    background-size: calc(100vw / 6) auto;
+  color: black;
+  cursor: pointer;
+  background-image: url('../img/gallery.jpg');
+  background-position: center center;
+  background-size: calc(100vw / 6) auto;
 }
 
 .chessboard {
@@ -298,26 +299,26 @@ left: calc(50% - 40px);
 }
 
 @media only screen and (max-width: 600px) {
-.flexrow {
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-  /*align-items: stretch;*/
-  width: 100vw;
-  /*height: 100vh;*/
-  overflow:auto;
-}
+  .flexrow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    /*align-items: stretch;*/
+    width: 100vw;
+    /*height: 100vh;*/
+    overflow:auto;
+  }
 
 
-.tile {
-  /*flex-grow: 1;*/
-  /*flex-basis: 200px;*/
-  /*min-width: 150px;*/
-  width: calc(100vw / 3);
-  height: calc(100vh / 5);
-  /*min-height: 150px;*/
-  padding: 0;
-}
+  .tile {
+    /*flex-grow: 1;*/
+    /*flex-basis: 200px;*/
+    /*min-width: 150px;*/
+    width: calc(100vw / 3);
+    height: calc(100vh / 5);
+    /*min-height: 150px;*/
+    padding: 0;
+  }
 
 }
 
@@ -327,6 +328,11 @@ left: calc(50% - 40px);
   width: 100vw;
   height: 100vh;
   background: #000;
+  background: url('../img/billiards.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
 }
 
 #billiards {
@@ -334,4 +340,58 @@ left: calc(50% - 40px);
   background-size: cover;
   width: 100vw;
   height: 100vh;
+}
+
+.aboutcon {
+  position: absolute;
+  margin: 16vh 12vw;
+  top: 0;
+  color: white;
+  z-index: 10;
+
+}
+
+.aHead {
+  font-size: 3em;
+  font-weight: 600;
+  text-shadow:
+  3px 3px 0 #000,
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px  1px 0 #000,
+  1px  1px 0 #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.aCont {
+  font-size: 1.2em;
+  text-align: justify;
+  margin:auto 5vw;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .about {
+    background-size: cover;
+  }
+
+  .aboutcon {
+    height: 65vh;
+  }
+
+  .aHead {
+    font-size: 2.3em;
+  }
+.aCont {
+      /*position: initial;*/
+    bottom: 0px;
+    top: 0;
+    padding-right: 20px;
+    /* height: 249px; */
+    /* margin-bottom: inherit; */
+    height: 40vh;
+}
+
 }
