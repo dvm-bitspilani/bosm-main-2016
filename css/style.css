@@ -90,6 +90,71 @@ html,body{
 }
 
 
+/*-----------NAV BAR--------------*/
+.menuOn{
+  -webkit-animation: moveCenterOn 1.5s forwards;
+  -o-animation: moveCenterOn 1.5s forwards;
+  animation: moveCenterOn 1.5s forwards ;
+}
+
+.menuOff{
+  -webkit-animation: moveCenterOff 1.5s forwards;
+  -o-animation: moveCenterOff 1.5s forwards;
+  animation: moveCenterOff 1.5s forwards ;
+}
+
+@keyframes moveCenterOff{
+  from{
+    transform: none ;
+  }
+    to{
+      transform: translate(-40vw,40vh);
+    }
+}
+
+@keyframes moveCenterOn{
+  from{
+    transform: translate(-40vw,40vh) ;
+  }
+    to{
+      transform: none;
+    }
+}
+@-webkit-keyframes moveCenterOff{
+  from{
+    -webkit-transform: none ;
+  }
+    to{
+      -webkit-transform: translate(-40vw,40vh);
+    }
+}
+
+@-webkit-keyframes moveCenterOn{
+  from{
+    -webkit-transform: translate(-40vw,40vh) ;
+  }
+    to{
+      -webkit-transform: none;
+    }
+}
+
+rect,text:not(#snooktxt){
+  display: none;
+}
+
+.mainNav{
+  position: absolute;
+  z-index: 999999;
+  transform: scale(0);
+  /*z-index: 1000;*/
+}
+
+.navLoad{
+  transition: all 1s;
+  transform: scale(1);
+}
+
+
 .swim{
   position: absolute;
   z-index: -3;
@@ -108,7 +173,7 @@ html,body{
 }
 
 .tube_path{
-	
+
 	position:relative;
 	height: 20%;
 	overflow:hidden;
@@ -140,24 +205,24 @@ html,body{
 }
 
 #tube2 {
-	
-  -webkit-animation-delay: .5s; 
-  animation-delay: .5s;	
+
+  -webkit-animation-delay: .5s;
+  animation-delay: .5s;
 }
 #tube3 {
-	
-  -webkit-animation-delay: 1s; 
-  animation-delay: 1s;	
+
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 #tube4 {
-	
-  -webkit-animation-delay: 1.5s; 
-  animation-delay: 1.5s;	
+
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
 }
 #tube5 {
-	
-  -webkit-animation-delay: 2s; 
-  animation-delay: 2s;	
+
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .floating{
@@ -176,13 +241,13 @@ html,body{
 @-webkit-keyframes Floatingx{
   from {-webkit-transform:translate(0, 0px);}
   65% {-webkit-transform:translate(0, 10px);}
-  to {-webkit-transform: translate(0, -0px);    }    
+  to {-webkit-transform: translate(0, -0px);    }
 }
 
 @-moz-keyframes Floating{
   from {-moz-transform:translate(0, 0px);}
   65% {-moz-transform:translate(0, 10px);}
-  to {-moz-transform: translate(0, -0px);}    
+  to {-moz-transform: translate(0, -0px);}
 }
 
 /*=================FLIP TILE===================*/
@@ -356,7 +421,7 @@ html,body{
   font-weight: 600;
   text-shadow:
   3px 3px 0 #000,
-  -1px -1px 0 #000,  
+  -1px -1px 0 #000,
   1px -1px 0 #000,
   -1px  1px 0 #000,
   1px  1px 0 #000;
@@ -395,3 +460,90 @@ html,body{
 }
 
 }
+
+
+/*-------PAGE TRANSITIONS---------*/
+
+
+/* rotate fall */
+
+.pt-page-rotateFall {
+	-webkit-transform-origin: 0% 0%;
+	transform-origin: 0% 0%;
+	-webkit-animation: rotateFall 1s both ease-in;
+	animation: rotateFall 1s both ease-in;
+}
+
+.pt-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
+}
+
+
+@-webkit-keyframes rotateFall {
+	0% { -webkit-transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; }
+	40% { -webkit-transform: rotateZ(17deg); }
+	60% { -webkit-transform: rotateZ(16deg); }
+	100% { -webkit-transform: translateY(100%) rotateZ(17deg); }
+}
+@keyframes rotateFall {
+	0% { -webkit-transform: rotateZ(0deg); transform: rotateZ(0deg); }
+	20% { -webkit-transform: rotateZ(10deg); transform: rotateZ(10deg); -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	40% { -webkit-transform: rotateZ(17deg); transform: rotateZ(17deg); }
+	60% { -webkit-transform: rotateZ(16deg); transform: rotateZ(16deg); }
+	100% { -webkit-transform: translateY(100%) rotateZ(17deg); transform: translateY(100%) rotateZ(17deg); }
+}
+
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
+}
+@keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); transform: scale(.8); }
+}
+
+
+
+/*page motion*/
+
+html, body { height: 100%; }
+
+
+.pt-page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.pt-page-current,
+.no-js .pt-page {
+	visibility: visible;
+	z-index: 1;
+}
+
+.pt-page-ontop {
+	z-index: 999;
+}
+
+
+/* triggers (menu and button) */
+/*
+
+.bla{
+	position: absolute;
+	z-index: 999999;
+
+}*/

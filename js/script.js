@@ -1,7 +1,7 @@
 $('.textField').click(function(){
   $('.loader').addClass('zoomIn');
   $('.logo').fadeOut();
-  $('.nav').addClass('navAnimate');
+  $('.mainNav').addClass('navLoad');
 });
 
 
