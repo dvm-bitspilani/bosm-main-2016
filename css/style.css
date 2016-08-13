@@ -295,6 +295,8 @@ rect,text:not(#snooktxt){
   color: black;
   cursor: pointer;
   background-image: url('../img/gallery.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   background-size: calc(100vw / 6) auto;
 }
@@ -324,11 +326,11 @@ rect,text:not(#snooktxt){
 }
 
 .black {
-  background: black;
+  background: url('../img/chess_black.svg');
 }
 
 .white {
-  background: #DDD;
+  background: url('../img/chess_white.svg');
 }
 
 /** LIGHTBOX MARKUP **/
@@ -352,7 +354,7 @@ rect,text:not(#snooktxt){
   /** Pad the lightbox image */
   max-width: 90%;
   max-height: 80%;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .lightbox:target {
@@ -547,3 +549,13 @@ html, body { height: 100%; }
 	z-index: 999999;
 
 }*/
+#slotmachine {
+  width:96vw;
+  height: 94vh;
+  margin: 3vh 2vw;
+}
+
+#stick {
+  transform-origin: bottom;
+  border-spacing: 0;
+}
