@@ -19,3 +19,12 @@ $('.option img').click(function(){
 });
 
 $(window).resize();
+
+
+// set events background-size
+
+// var tubes=$('.tube');
+// console.log($(tubes.get(0)).css('background',"url:('../img/events/athletics.svg')"),$(tubes.get(0)).css('background'));
+// for(var x=0;x<tubes.length;x++)
+// console.log($(tubes.get(x)).css('background','url:(../img/events/'+$(tubes.get(x)).attr('id')+'.svg)'));
+  // tubes[x].css()'background-size','16vh 16vh');

@@ -1,5 +1,5 @@
 
-football.setAttribute('y',(window.innerHeight-football.getBBox().height)/2);
+// football.setAttribute('y',(window.innerHeight-football.getBBox().height)/2);
 
 var finalBall=document.getElementById('finalBall');
 finalBall.style.opacity='0';
