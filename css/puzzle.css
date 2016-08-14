@@ -1,0 +1,126 @@
+html,body {
+	font-size: 16px;
+	margin:0;
+	padding: 0;
+	overflow: hidden;
+	font-family: 'PT Sans', sans-serif;
+}
+
+
+
+.container {
+	display: block;
+    /*position: absolute;*/
+    /*right: 2vw;*/
+     width: 100vw; 
+    height: 100vh;
+    background:url(../img/contacts.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts-wrapper {
+	float: left;
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 40vw;
+	margin: 0 5vw;
+}
+
+.puzzle-wrapper {
+	float:right;
+	height:100vh;
+	width:50vw;
+}
+
+.scale{
+
+	transform-origin: 50% 50%;
+	-webkit-transform-origin: 50% 50%;
+
+}
+
+#Sec { transition: all .4s ease-in-out;z-index: 0;}
+#Sec:hover { transform: scale(1.1)}
+
+#Sec_2 { transition: all .4s ease-in-out; z-index: 0;}
+#Sec_2:hover { transform: scale(1.1); }
+
+#Sec_3 { transition: all .4s ease-in-out; z-index: 0;}
+#Sec_3:hover { transform: scale(1.1); }
+
+#Sec_4 { transition: all .4s ease-in-out; z-index: 0;}
+#Sec_4:hover { transform: scale(1.1); }
+
+#WebMaster { transition: all .4s ease-in-out; z-index: 0;}
+#WebMaster:hover { transform: scale(1.1); }
+
+#Registration { transition: all .4s ease-in-out; z-index: 0;}
+#Registration:hover { transform: scale(1.1); }
+
+#Spons { transition: all .4s ease-in-out; z-index: 0;}
+#Spons:hover { transform: scale(1.1); }
+
+#RecnAcc { transition: all .4s ease-in-out; z-index: 0;}
+#RecnAcc:hover { transform: scale(1.1); }
+
+#Events { transition: all .4s ease-in-out; z-index: 0;}
+#Events:hover { transform: scale(1.1); }
+
+.up{
+	transition: all .4s ease-in-out;
+	transform: translateY(-20px);
+}
+.down{
+	transition: all .4s ease-in-out;
+	transform: translateY(20px);
+}
+.right{
+	transition: all .4s ease-in-out;
+	transform: translateX(20px);
+}
+.left{
+	transition: all .4s ease-in-out;
+	transform: translateX(-20px);
+}
+
+.conHead {
+	font-size: 2.7em;
+	font-weight: bold;
+}
+
+.conText {
+	font-size: 1.3em;
+}
+
+@media only screen and (max-width: 600px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: middle;
+	}
+	.puzzle-wrapper {
+		height: inherit;
+    	width: initial;
+    	position: absolute;
+    	bottom: 20px;
+    	margin: 0 auto;
+    	width:100vw;
+    	max-height: 70vh;
+	}
+	.contacts-wrapper {
+		margin-top:20px;
+		display: block;
+    	height: initial;
+    	width: initial;
+	}
+	.conHead{
+		font-size: 1.8em;
+	}
+	.conText {
+		font-size: 1em;
+	}
+}
