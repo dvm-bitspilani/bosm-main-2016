@@ -667,7 +667,9 @@ page4
 		<a href="#0" class="modal-close">Close</a>
 	</div> <!-- cd-modal -->
 
-	<div class="cd-cover-layer"></div> <!-- .cd-cover-layer -->
+	<div class="cd-cover-layer"></div>
+<div id="ballWrap"></div>
+   <!-- .cd-cover-layer -->
   <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/nav.js"></script>
@@ -676,12 +678,23 @@ page4
   <script src="js/snap.svg-min.js"></script>
 <script src="js/main.js"></script>
 <script>
+$('#ballWrap').hide();
 console.log($('.cd-main-content').css('z-index'));
-$(document).click(function(eve){
-var x=eve.pageX;
-var y=eve.pageY;
-if(x<(0.16*window.innerWidth)&&y<(0.16*window.innerHeight))
-  console.log(x,y);
+$('#ballWrap').click(function(eve){
+  $('#ballWrap').hide();
+  // $('#pt-main').css('z-index','1');
+  $('.mainNav').show();
+  $('#bc').delay(100).click();
+});
+
+$('.ball').click(function(){
+  setTimeout(function(){
+    $('#ballWrap').show();
+    $('.mainNav').hide();
+    // $('#pt-main').css('z-index','3');
+    // $('.mainNav').css('z-index','1');
+
+  },2000);
 });
 </script>
 </body>

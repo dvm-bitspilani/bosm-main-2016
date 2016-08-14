@@ -701,6 +701,7 @@ Main Content
     font-size: 4rem;
     font-weight: 300;
   }
+
 }
 
 /* --------------------------------
@@ -710,7 +711,7 @@ Modal Window
 -------------------------------- */
 .cd-modal {
   position: fixed;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   left: 0;
   height: 100%;
@@ -866,3 +867,38 @@ Modal Window
   z-index: 2;
   height: 100vh;
 }
+
+#ballWrap{
+  position: absolute;
+  z-index: 4;
+  left: 5vw;
+bottom: 5vh;
+width: 65px;
+height: 65px;
+  background: url('../img/football.svg') no-repeat;
+  background-size:100% 100%;
+
+}
+/*====================CSS SPRITE SPONS========================*/
+
+.sprite { background: url('../img/sponssprite.png') no-repeat top left; width: 336px;  }
+.sprite.spons1 { background-position: 0 0; height: 56px; }
+.sprite.spons2 { background-position: 0 -156px; height: 127px; }
+.sprite.spons3 { background-position: 0 -383px; height: 352px; }
+.sprite.spons4 { background-position: 0 -835px; height: 383px; }
+.sprite.spons5 { background-position: 0 -1318px; height: 177px; }
+.sprite.spons6 { background-position: 0 -1595px; height: 125px; }
+.sprite.spons7 { background-position: 0 -1820px; height: 173px; }
+.sprite.spons8 { background-position: 0 -2093px; height: 64px; }
+.sprite.spons9 { background-position: 0 -2257px; height: 195px; }
+.sprite.spons10 { background-position: 0 -2552px; height: 139px; }
+.sprite.spons11 { background-position: 0 -2791px; height: 85px; }
+.sprite.spons12 { background-position: 0 -2976px; height: 337px; }
+.sprite.spons13 { background-position: 0 -3413px; height: 253px; }
+.sprite.spons14 { background-position: 0 -3766px; height: 456px; }
+.sprite.spons15 { background-position: 0 -4322px; height: 80px; }
+.sprite.spons16 { background-position: 0 -4502px; height: 150px; }
+.sprite.spons17 { background-position: 0 -4752px; height: 105px; }
+.sprite.spons18 { background-position: 0 -4957px; height: 285px; }
+.sprite.spons19 { background-position: 0 -5342px; height: 336px; }
+.sprite.spons20 { background-position: 0 -5778px; height: 409px; }
