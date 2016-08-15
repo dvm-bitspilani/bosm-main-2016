@@ -160,7 +160,9 @@
 			</div>
 		</div>
 		<a href="#_" class="lightbox" onclick="$(this).fadeOut('fast')">
+		<div>
 			<img src="img/gallery.jpg">
+		</div>
 		</a>
 	</div>
 
@@ -213,8 +215,7 @@
 			var cleanup = /\"|\'|\)/g;
 			imgurl = imgurl.split('/').pop().replace(cleanup, '');
 			$('.lightbox img').attr('src', 'img/gallery/'+imgurl);
-			$('.lightbox').fadeIn('slow');
-
+			$('.lightbox').css('display','flex').hide().fadeIn('slow');
 		}
 
 	</script>
