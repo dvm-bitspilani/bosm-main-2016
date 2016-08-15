@@ -3,7 +3,7 @@ $('.textField').click(function(){
   $('.logo').fadeOut();
   $('.mainNav').addClass('navLoad');
   $('.arrow').addClass('arrowShow');
-  $('.logo2').fadeIn();
+  $('.logo2,.logRegButton').fadeIn();
 });
 
 
@@ -586,7 +586,9 @@ $('.tube').mouseleave(function(){
 
 
 // $('#ballWrap').hide();
-console.log($('.cd-main-content').css('z-index'));
+
+
+// console.log($('.cd-main-content').css('z-index'));
 $('#ballWrap').click(function(eve){
   $('#overlay').fadeIn();
   $('#ballWrap').hide();

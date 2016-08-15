@@ -54,7 +54,7 @@ function moveSingleBall(ele,type){
   var nav=document.getElementById('navInner').getBBox();
   if(type=='off'){
     $('.arrow').removeClass('arrowShow');
-    $('.logo2').fadeOut();
+    $('.logo2,.logRegButton').fadeOut();
     var eleX=ele.getBBox().x+(ele.getBBox().width/2);
     var eleY=ele.getBBox().y+(ele.getBBox().height/2);
     ballPlace.push({
@@ -69,7 +69,7 @@ function moveSingleBall(ele,type){
   }
   else if(type=='on'){
     $('.arrow').addClass('arrowShow');
-    $('.logo2').fadeIn();
+    $('.logo2,.logRegButton').fadeIn();
 
       ele.style.display='block';
     ballPlace.map(function(arrEle){
@@ -110,7 +110,7 @@ function end(ele){
   }
 
   if(flag==true){
-    $('finalBall').removeClass('noShow');
+    $('finalBall').removeClass('noClick');
 
     ele.style.display='block';
     // finalBall.style.opacity='0';
@@ -121,8 +121,8 @@ function end(ele){
 
 
 $('#bc').click(function(){
-  $('#finalBall').addClass('noShow');
-  $('.logo2').show();
+  $('#finalBall').addClass('noClick');
+  $('.logo2,.logRegButton').fadeIn();
   flag=true;
   $('.arrow').addClass('arrowShow');
     $(this).removeClass('menuOff');
