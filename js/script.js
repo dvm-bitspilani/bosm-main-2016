@@ -2,6 +2,7 @@ $('.textField').click(function(){
   $('.loader').addClass('zoomIn');
   $('.logo').fadeOut();
   $('.mainNav').addClass('navLoad');
+  $('.arrow').addClass('arrowShow');
 });
 
 

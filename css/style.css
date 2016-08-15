@@ -1,4 +1,4 @@
-@font-face {
+0@font-face {
   font-family:
 }
 
@@ -138,7 +138,7 @@ html,body{
     }
 }
 
-rect,text:not(#snooktxt){
+text:not(.imp){
   display: none;
 }
 
@@ -162,14 +162,14 @@ rect,text:not(#snooktxt){
   left:0;
   width:100vw;
   height:100vh;
-  background: url('../img/swimming_pool.svg');
-  background-size: contain;
+  background: url('../img/swimming_pool.svg') no-repeat;
+  background-size: cover;
 }
 
 .swim_container{
 	width: 100%;
 	height: 96vh;
-	margin-top:2vh;
+	/*margin-top:2vh;*/
 }
 
 .tube_path{
@@ -190,10 +190,40 @@ rect,text:not(#snooktxt){
 
 #even_path {
 
-	width: 60vw;
-	margin-left:20vw;
-	margin-right:20vw;
+	width: 64vw;
+	margin-left:18vw;
+	margin-right:18vw;
 }
+
+@media screen and (min-width: 1100px) {
+  .swim{
+    background-size: 100%;
+    background-position: 0 -3vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  #even_path {
+    width: 84vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
+}
+
+#odd_path {
+    width: 100vw;
+    margin-left: 0vw;
+    margin-right:0vw;
+}
+
+.tube {
+    height: 16vh;
+    width: 16vh;
+        background-size: 16vh 16vh !important;
+  }
+}
+
+
 
 .tube {
 	position: relative;
@@ -225,92 +255,78 @@ rect,text:not(#snooktxt){
   animation-delay: 2s;
 }
 
-#athletics{
+.athletics{
   background: url('../img/events/athletics.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#badminton{
+.badminton{
   background: url('../img/events/badminton.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#basketball{
+.basketball{
   background: url('../img/events/basketball.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#billiard{
+.billiard{
   background: url('../img/events/billiard.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#carrom{
+.carrom{
   background: url('../img/events/carrom.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#cricket{
+.cricket{
   background: url('../img/events/cricket.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#football{
+.football{
   background: url('../img/events/football.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#tube1{
-  background: url('../img/events/athletics.svg') no-repeat;
-  background-size: 20vh 20vh;
-}
 
-#tube1{
-  background: url('../img/events/athletics.svg') no-repeat;
-  background-size: 20vh 20vh;
-}
-
-#tube1{
-  background: url('../img/events/athletics.svg') no-repeat;
-  background-size: 20vh 20vh;
-}
-
-#hockey{
+.hockey{
   background: url('../img/events/hockey.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#miscellaneous{
+.miscellaneous{
   background: url('../img/events/miscellaneous.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#swimming{
+.swimming{
   background: url('../img/events/swimming.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#taekwondo{
+.taekwondo{
   background: url('../img/events/taekwondo.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#tennis{
+.tennis{
   background: url('../img/events/tennis.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#tt{
+.tt{
   background: url('../img/events/tt.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#volleyball{
+.volleyball{
   background: url('../img/events/volleyball.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
-#weightlifting{
+.weightlifting{
   background: url('../img/events/weightlifting.svg') no-repeat;
   background-size: 20vh 20vh;
 }
@@ -875,7 +891,7 @@ Modal Window
 bottom: 5vh;
 width: 65px;
 height: 65px;
-  background: url('../img/football.svg') no-repeat;
+  background: url('../img/footBall.svg') no-repeat;
   background-size:100% 100%;
 
 }
@@ -902,3 +918,51 @@ height: 65px;
 .sprite.spons18 { background-position: 0 -4957px; height: 285px; }
 .sprite.spons19 { background-position: 0 -5342px; height: 336px; }
 .sprite.spons20 { background-position: 0 -5778px; height: 409px; }
+
+
+
+
+
+/*--------------BAXTER-------------------*/
+
+.baxter{
+  width:100vw;
+  height: 100vh;
+  background:url('../img/basketBall.svg') no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+}
+
+
+#overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height:100vh;
+  z-index: 3;
+  display: none;
+  background: rgba(0,0,0,0.8);
+}
+
+
+.arrow{
+  position: absolute;
+  bottom: 1vw;
+  left: 5vw;
+  height: auto;
+  z-index: 4;
+  transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+  transform: scale(0);
+  transition: all 0.7s;
+}
+
+.arrowShow{
+  transform: scale(1);
+  /*transition: all 0.5s;*/
+}
+
+.arrow img{
+  width:20vw;
+}
