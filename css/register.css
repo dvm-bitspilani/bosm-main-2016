@@ -1,0 +1,28 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: hidden;
+	background: url('../img/register_bg.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 16px;
+	font-family: 'PT-Sans', sans-serif;
+}
+
+.content-wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
