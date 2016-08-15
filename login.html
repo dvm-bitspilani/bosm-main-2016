@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>BOSM 2016 | Login</title>
+	<meta name="description" content="">
+	<meta name="author" content="Nikhil Verma">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="http://bits-bosm.org/2016/static/pcradmin/images/favicon.ico">
+	<style type="text/css">
+		body {
+			background: url('img/register_bg.svg') no-repeat;
+			background-size: cover;
+		}
+		.container {
+			max-width:50vw;
+		}
+
+		.input-field label {
+			color: #555;
+		}
+
+
+		/* label underline focus color */
+		.input-field input[type=text]:focus {
+			border-bottom: 1px solid #ffb74d;
+			box-shadow: 0 1px 0 0 #ffb74d;
+		}
+		@media only screen and (max-width: 600px) {
+			h2 {
+				font-size: 1.7em;
+			}
+		}
+		.page-footer {
+			position: fixed;
+			bottom: 0;
+			margin-bottom: 5px;
+			text-align: center;
+			width: 100vw;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+			</div>
+			<div class="col-sm-6" style="float:right">
+				<h2>Log In</h2>
+				<form action="http://bits-bosm.org/2016/account/login/" method="POST">
+					<input type="hidden" name="csrfmiddlewaretoken" value="KKkI3wEIL8eV6d4hPt192Ur8zIwiNUnp">
+					<div class="input-field">
+						<input id="username" maxlength="254" name="username" type="text" vk_10e10="subscribed">
+						<label for="username">Username</label>
+					</div>
+					<div class="input-field">
+						<input type="password" name="password" id="password" vk_10e10="subscribed"><br>
+						<label for="password">Password</label>
+					</div>
+					<input class="waves-effect waves-light btn deep-orange darken-2" type="submit" name="submit" value="Login">
+				</form>	
+				<br>
+				<div>
+					<a class="red-text" href="http://bits-bosm.org/2016/account/register/">Register</a><br>
+					<a class="red-text" href="http://bits-bosm.org/2016/account/resetpassword/">Forgot Password?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="page-footer row">
+		Developed at DVM, BITS Pilani
+	</div>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			Materialize.updateTextFields();
+		});
+	</script>
+</body>
