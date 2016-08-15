@@ -3,6 +3,8 @@ $('.textField').click(function(){
   $('.logo').fadeOut();
   $('.mainNav').addClass('navLoad');
   $('.arrow').addClass('arrowShow');
+  $('#finalBall').addClass('noShow');
+  
 });
 
 
