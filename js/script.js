@@ -3,8 +3,7 @@ $('.textField').click(function(){
   $('.logo').fadeOut();
   $('.mainNav').addClass('navLoad');
   $('.arrow').addClass('arrowShow');
-  $('#finalBall').addClass('noShow');
-  
+  $('.logo2').fadeIn();
 });
 
 
@@ -571,3 +570,66 @@ var spon = [0,
 // 	var pos = $(el).css('background-position');
 // 	console.log(pos);
 // });
+
+
+$('.tube').mouseenter(function(){
+  var type=$(this).attr('class').split(' ').pop();
+  $(this).find('div').html(type);
+  $(this).find('div').fadeIn();
+});
+
+$('.tube').mouseleave(function(){
+  // $(this).find('div').html('hello');
+  $(this).find('div').fadeOut();
+});
+
+
+
+// $('#ballWrap').hide();
+console.log($('.cd-main-content').css('z-index'));
+$('#ballWrap').click(function(eve){
+  $('#overlay').fadeIn();
+  $('#ballWrap').hide();
+  // $('#pt-main').css('z-index','1');
+  $('.mainNav').show();
+  $('#bc').delay(100).click();
+});
+
+$('.ball').click(function(){
+  $('#overlay').fadeOut();
+  setTimeout(function(){
+    $('#ballWrap').show();
+    $('.mainNav').hide();
+    // $('#pt-main').css('z-index','3');
+    // $('.mainNav').css('z-index','1');
+
+  },2000);
+});
+
+var content={
+
+
+}
+
+$('.tube').click(function(){
+  var sport=$(this).attr('type').split(' ');
+  var data="";
+  var url="http://bits-bosm.org/2016/events/";
+  sport.map(function(ele){
+    console.log(url+ele+'/');
+    $.ajax({
+      type:'GET',
+      url:url+ele+'/',
+    //  dataType:'jsonp',
+    //  jsonpCallback:'callback'
+      // contentType: "application/json",
+      success:function(response){
+        console.log(response);
+      }
+    });
+
+  });
+
+  // $('.cd-modal-content').html('<p>'+  content[sport]+'</p>');
+
+});

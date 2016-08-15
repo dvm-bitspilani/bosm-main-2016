@@ -54,7 +54,7 @@ function moveSingleBall(ele,type){
   var nav=document.getElementById('navInner').getBBox();
   if(type=='off'){
     $('.arrow').removeClass('arrowShow');
-
+    $('.logo2').fadeOut();
     var eleX=ele.getBBox().x+(ele.getBBox().width/2);
     var eleY=ele.getBBox().y+(ele.getBBox().height/2);
     ballPlace.push({
@@ -69,6 +69,8 @@ function moveSingleBall(ele,type){
   }
   else if(type=='on'){
     $('.arrow').addClass('arrowShow');
+    $('.logo2').fadeIn();
+
       ele.style.display='block';
     ballPlace.map(function(arrEle){
       if(arrEle.ele==ele){
@@ -102,11 +104,13 @@ function end(ele){
 
   if($('#bc').hasClass('menuOn')&&flag==false){
     spin.beginElement();
+    $('finalBall').addClass('noShow');
     $('#bc').removeClass('menuOn')
     $('#bc').addClass('menuOff');
   }
 
   if(flag==true){
+    $('finalBall').removeClass('noShow');
 
     ele.style.display='block';
     // finalBall.style.opacity='0';
@@ -118,6 +122,7 @@ function end(ele){
 
 $('#bc').click(function(){
   $('#finalBall').addClass('noShow');
+  $('.logo2').show();
   flag=true;
   $('.arrow').addClass('arrowShow');
     $(this).removeClass('menuOff');
@@ -136,7 +141,7 @@ $('.ball:not(.noShow)').mouseenter(function(){
     $(this).prev().delay(300).fadeIn(300);
     // $(this).prev().prev().fadeIn();
     var animate=$(this).prev().prev().get(0).childNodes[1];
-    var type=$(this).attr('id').charAt(4);
+    var type=$(this).attr('page');
 
 
     animate.setAttribute('from','0');
@@ -161,7 +166,7 @@ $('.ball:not(.noShow)').mouseenter(function(){
 var f3=false;
 $('.ball:not(.noShow)').click(function(){
   var animate=$(this).prev().prev().get(0).childNodes[1];
-  var type1=$(this).attr('id').charAt(4);
+  var type1=$(this).attr('page');
 
   animate.setAttribute('to','0');
   animate.setAttribute('from','106.32898');
@@ -188,7 +193,7 @@ $('.ball:not(.noShow)').mouseleave(function(){
     // $(this).prev().prev().fadeOut();
 
     var animate=$(this).prev().prev().get(0).childNodes[1];
-    var type=$(this).attr('id').charAt(4);
+    var type=$(this).attr('page');
 
     animate.setAttribute('to','0');
     animate.setAttribute('from','106.32898');

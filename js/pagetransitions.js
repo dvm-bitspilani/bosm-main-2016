@@ -45,7 +45,7 @@ var PageTransitions = (function() {
 			if( isAnimating ) {
 				return false;
 			}
-			var page=parseInt($(this).attr('id').charAt(4));
+			var page=parseInt($(this).attr('page'));
 			console.log(page);
 			if(page!=(current+1))
 			nextPage( page -1);

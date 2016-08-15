@@ -11,6 +11,10 @@ html,body{
 
 }
 
+.inner{
+  display: none;
+}
+
 .loader{
   margin: 0;
   position: absolute;
@@ -178,7 +182,7 @@ text:not(.imp){
 
 	position:relative;
 	height: 20%;
-	overflow:hidden;
+	/*overflow:hidden;*/
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -318,7 +322,7 @@ text:not(.imp){
   background-size: 20vh 20vh;
 }
 
-.tt{
+.table-Tennis{
   background: url('../img/events/tt.svg') no-repeat;
   background-size: 20vh 20vh;
 }
@@ -330,6 +334,21 @@ text:not(.imp){
 
 .weightlifting{
   background: url('../img/events/weightlifting.svg') no-repeat;
+  background-size: 20vh 20vh;
+}
+
+.chess{
+  background: url('../img/events/chess.svg') no-repeat;
+  background-size: 20vh 20vh;
+}
+
+.squash{
+  background: url('../img/events/squash.svg') no-repeat;
+  background-size: 20vh 20vh;
+}
+
+.online{
+  background: url('../img/events/online.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
@@ -679,28 +698,28 @@ html, body { height: 100%; }
 
 
 /*====================CSS SPRITE SPONS========================*/
- 
-.sprite { background: url('../img/sponssprite.png') no-repeat top left; width: calc(192vw / 12.8); background-size: cover; height: calc(175vw / 12.8) } 
-.sprite.spons1 { background-position: 0 0; } 
-.sprite.spons2 { background-position: 0 calc(-275vw / 12.8); } 
-.sprite.spons3 { background-position: 0 calc(-550vw / 12.8); } 
-.sprite.spons4 { background-position: 0 calc(-825vw / 12.8); } 
-.sprite.spons5 { background-position: 0 calc(-1100vw / 12.8); } 
-.sprite.spons6 { background-position: 0 calc(-1375vw / 12.8); } 
-.sprite.spons7 { background-position: 0 calc(-1650vw / 12.8); } 
-.sprite.spons8 { background-position: 0 calc(-1925vw / 12.8); } 
-.sprite.spons9 { background-position: 0 calc(-2200vw / 12.8); } 
-.sprite.spons10 { background-position: 0 calc(-2475vw / 12.8); } 
-.sprite.spons11 { background-position: 0 calc(-2750vw / 12.8); } 
-.sprite.spons12 { background-position: 0 calc(-3025vw / 12.8); } 
-.sprite.spons13 { background-position: 0 calc(-3300vw / 12.8); } 
-.sprite.spons14 { background-position: 0 calc(-3575vw / 12.8); } 
-.sprite.spons15 { background-position: 0 calc(-3850vw / 12.8); } 
-.sprite.spons16 { background-position: 0 calc(-4125vw / 12.8); } 
-.sprite.spons17 { background-position: 0 calc(-4400vw / 12.8); } 
-.sprite.spons18 { background-position: 0 calc(-4675vw / 12.8); } 
-.sprite.spons19 { background-position: 0 calc(-4950vw / 12.8); } 
-.sprite.spons20 { background-position: 0 calc(-5225vw / 12.8); } 
+
+.sprite { background: url('../img/sponssprite.png') no-repeat top left; width: calc(192vw / 12.8); background-size: cover; height: calc(175vw / 12.8) }
+.sprite.spons1 { background-position: 0 0; }
+.sprite.spons2 { background-position: 0 calc(-275vw / 12.8); }
+.sprite.spons3 { background-position: 0 calc(-550vw / 12.8); }
+.sprite.spons4 { background-position: 0 calc(-825vw / 12.8); }
+.sprite.spons5 { background-position: 0 calc(-1100vw / 12.8); }
+.sprite.spons6 { background-position: 0 calc(-1375vw / 12.8); }
+.sprite.spons7 { background-position: 0 calc(-1650vw / 12.8); }
+.sprite.spons8 { background-position: 0 calc(-1925vw / 12.8); }
+.sprite.spons9 { background-position: 0 calc(-2200vw / 12.8); }
+.sprite.spons10 { background-position: 0 calc(-2475vw / 12.8); }
+.sprite.spons11 { background-position: 0 calc(-2750vw / 12.8); }
+.sprite.spons12 { background-position: 0 calc(-3025vw / 12.8); }
+.sprite.spons13 { background-position: 0 calc(-3300vw / 12.8); }
+.sprite.spons14 { background-position: 0 calc(-3575vw / 12.8); }
+.sprite.spons15 { background-position: 0 calc(-3850vw / 12.8); }
+.sprite.spons16 { background-position: 0 calc(-4125vw / 12.8); }
+.sprite.spons17 { background-position: 0 calc(-4400vw / 12.8); }
+.sprite.spons18 { background-position: 0 calc(-4675vw / 12.8); }
+.sprite.spons19 { background-position: 0 calc(-4950vw / 12.8); }
+.sprite.spons20 { background-position: 0 calc(-5225vw / 12.8); }
  /*================================================================================*/
 
  .spons-wrapper {
@@ -973,6 +992,7 @@ Modal Window
 }
 
 #ballWrap{
+  display: none;
   position: absolute;
   z-index: 4;
   left: 5vw;
@@ -981,8 +1001,10 @@ width: 65px;
 height: 65px;
   background: url('../img/footBall.svg') no-repeat;
   background-size:100% 100%;
-
 }
+
+
+
 /*====================CSS SPRITE SPONS========================*/
 /*
 .sprite { background: url('../img/sponssprite.png') no-repeat top left; width: 336px;  }
@@ -1054,3 +1076,62 @@ height: 65px;
 .arrow img{
   width:20vw;
 }
+
+
+.logo2{
+  position: absolute;
+  top:3vw;
+  left:5vw;
+  z-index: 4;
+  display: none;
+}
+
+.logo2 img{
+  width: 20vw;
+}
+
+.noShow{
+  cursor: none;
+}
+
+
+.ball{
+  cursor: pointer;
+}
+
+
+/*-------------tooltip-----------*/
+
+/**
+ * Tooltip Styles
+ */
+
+ .tooltiptext-top{
+   text-transform: capitalize;
+   position: absolute;
+   width: 120px;
+   height: 20px;
+   padding: 3px;
+   top:-16px;
+   /*right:-120px;*/
+   border-radius: 2px;
+   text-align: center;
+   display: none;
+   color:white;
+   background: rgba(0,0,0,0.6);
+ }
+
+  .tooltiptext-bottom{
+    text-transform: capitalize;
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    padding: 3px;
+    bottom:-16px;
+    /*right:-120px;*/
+    border-radius: 2px;
+    text-align: center;
+    display: none;
+    color:white;
+    background: rgba(0,0,0,0.6);
+  }
