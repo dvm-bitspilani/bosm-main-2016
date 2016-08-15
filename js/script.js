@@ -460,6 +460,11 @@ $('#lever').click(function(){
 }
 );
 
+setInterval(function () {
+    leverpull();
+    randomspons();
+}, 3000);
+
 var randomspons;
 
 (function( $ ) {

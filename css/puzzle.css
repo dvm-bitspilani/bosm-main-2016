@@ -164,16 +164,21 @@ html,body {
 
 .baxHead {
 	margin-bottom: 15px;
-	font-size: 2em;
+	font-size: 2.7em;
+	font-weight: bold;
 }
 
 .baxText {
 	max-height: 50vh;
 	overflow-y: auto;
+	font-size: 1.3em;
 }
 
 @media only screen and (max-width: 600px) {
 	.baxHead {
 		font-size: 1.5em;
+	}
+	.baxText {
+		font-size: 1em;
 	}
 }
