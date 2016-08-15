@@ -693,8 +693,8 @@
 							<input id="id_phone" name="phone" type="text">
 							<label for="id_phone">Phone</label>
 						</div>
-						<input type="hidden" name="submit" value="Register">
-						<a class="waves-effect waves-light btn deep-orange darken-2" name="submitfake">Register</a>
+						<!-- <input type="hidden" name="submit" value="Register"> -->
+						<input type="submit" class="waves-effect waves-light btn deep-orange darken-2" value="Register">
 						<!-- <input class="button button-primary" type="submit" name="submitfake" value="Register"> -->
 					</form>
 				</div>
@@ -721,6 +721,9 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript">
+		$(document).ready(function() {
+			Materialize.updateTextFields();
+		});
 		$(document).ready(function() {
 			$('select').material_select();
 		});
