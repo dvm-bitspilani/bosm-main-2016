@@ -30,7 +30,7 @@ html,body{
 
 .logo{
   position: relative;
-  top:calc(50% - 98px);
+  top:calc(50% - 116px);
   margin:auto;
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@ html,body{
 }
 
 .logo img{
-  width:150px;
+  width: 200px;
 }
 
 
@@ -909,7 +909,7 @@ Modal Window
 
 .cd-modal-content {
   position: relative;
-  height: 100vh;
+      height: 82vh;
   overflow-y: auto;
   padding: 3em 5% 4em;
   opacity: 0;
@@ -927,8 +927,14 @@ Modal Window
 .cd-modal-content p {
   color: #f2f2f2;
   line-height: 1.6;
-  margin: 2em 0;
+  margin: 0em 0;
 }
+
+.cd-modal-content h4 {
+  color: white;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+  }
 .modal-is-visible .cd-modal-content {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -946,7 +952,7 @@ Modal Window
     padding: 3em 10% 4em;
   }
   .cd-modal-content p {
-    font-size: 2.4rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -996,11 +1002,24 @@ Modal Window
   position: absolute;
   z-index: 4;
   left: 5vw;
-bottom: 5vh;
-width: 65px;
-height: 65px;
+bottom: 5vh;;;
+width: 70px;
+height: 70px;
   background: url('../img/footBall.svg') no-repeat;
   background-size:100% 100%;
+  animation: twean 2s infinite;
+}
+
+@keyframes twean{
+  0%{
+    transform:scale(0.9);
+  }
+  50%{
+    transform:scale(1.1);
+  }
+  100%{
+    transform:scale(0.9);
+  }
 }
 
 
