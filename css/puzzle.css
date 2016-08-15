@@ -124,3 +124,56 @@ html,body {
 		font-size: 1em;
 	}
 }
+
+.baxter {
+	width: 100vw;
+	height: 100vh;
+	/*background: url('../img/baxter_bg.svg');
+	background-size: 100%;
+	background-position: center;*/
+}
+
+.baxter img {
+	width: 100vw;
+	height: 100vh;
+}
+
+.bax-wrapper {
+	position: absolute;
+	color: white;
+	top:0;
+	width: 100vw;
+}
+
+.just_align {
+	float: left;
+}
+
+.baxCont {
+	position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    margin: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.baxHead {
+	margin-bottom: 15px;
+	font-size: 2em;
+}
+
+.baxText {
+	max-height: 50vh;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 600px) {
+	.baxHead {
+		font-size: 1.5em;
+	}
+}
