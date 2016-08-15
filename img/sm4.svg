@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-</head>
-<body>
-
-<div class="sm_svg">
-<svg version="1.1" id="slotmachine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="5.3 572.8 612 264.1" style="enable-background:new 5.3 572.8 612 264.1;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#373737;}
@@ -43,12 +36,16 @@
 <rect x="59.3" y="572.8" class="st1" width="501.4" height="184.9"/>
 <rect id="Jackpot" x="94.8" y="596.5" class="st2" width="441.7" height="32.5"/>
 <polygon class="st3" points="5.3,789.5 617.3,789.5 560.8,757.5 60.2,757.3 "/>
-<g id="slot1">
-	<path id="slot1_4" class="st4" d="M78.2,753.4h49c20.9,0,44.6,0.3,65-0.1l-0.1-104.7c-37.3-0.2-76.9,0.4-113.9-0.1L78.2,753.4
+<g id="slot1_4_">
+	<path id="slot1" class="st4" d="M78.2,753.4h49c20.9,0,44.6,0.3,65-0.1l-0.1-104.7c-37.3-0.2-76.9,0.4-113.9-0.1L78.2,753.4
 		L78.2,753.4z"/>
 </g>
 <rect x="537.8" y="720.5" class="st5" width="12.9" height="27.8"/>
-
+<g id="lever">
+	<rect id="stick" x="588.6" y="676.7" class="st3" width="8.9" height="56"/>
+	<path id="bulb" class="st6" d="M588.9,679.9c3.6,0.6,4.5,0.4,8.3,0.1c19.3-4.8,14.1-24.2-3.4-24.7c-8.6-0.2-15.6,4.8-16.6,10.4
+		C575.9,672.9,581.9,678.5,588.9,679.9z"/>
+</g>
 <rect x="5.3" y="789.5" class="st0" width="612" height="47.4"/>
 <rect x="147.7" y="801.2" class="st7" width="134.2" height="24.8"/>
 <path class="st8" d="M410.3,808.6l-16.8-0.1v12.1h16.8l0.2,6.2c3.3-1.2,13.4-8.9,16.7-10.5l2.3-1.8c-2.4-2-6.1-3.8-9.2-6
@@ -97,6 +94,38 @@
 	<path class="st12" d="M515.2,581.1c-6.2,1.6-3.8,9.1,3.1,7.6C524.2,587.4,522.2,579.3,515.2,581.1z"/>
 	<path class="st13" d="M545.9,609.1c-1.9,0.6-2.1,0.6-2.9,1.9c-1.9,3.3,1.8,6.8,6.5,5.5C555.8,614.7,552.2,607,545.9,609.1z"/>
 </g>
+<g id="Buttons">
+	<g id="but1">
+		<path class="st15" d="M164.7,772.8c1.1,1.1,1.6,2.6,2.7,3.6c1,0.9,2.7,2.1,4.3,2.8c8.9,4.1,25.6,4,32.2-5l0.7-0.9
+			c-0.1-5.1-1.4-7-5.5-9.2c-7.7-4.1-20.1-4.3-28-0.3C167,765.8,164.8,767.7,164.7,772.8z"/>
+		<path class="st16" d="M204.5,773.3l-0.7,0.9c-6.5,9-23.2,9-32.2,5c-1.6-0.7-3.3-1.8-4.3-2.8c-1.1-1-1.6-2.5-2.7-3.6
+			c0,4.7,2.3,7,6,8.9c3.6,1.8,8.4,2.8,13.6,2.9C194.5,784.6,204.8,781,204.5,773.3z"/>
+	</g>
+	<g id="but5">
+		<path class="st17" d="M411.6,772.6c1.4,1.8,1.7,4.4,6.8,6.7c7.2,3.1,18.1,3.5,25.3,0.3c6.9-3,5.7-4.8,7.6-6c0-2.6,0.1-4.1-1.4-5.9
+			c-5.1-7-23.1-8.7-32.2-3.8C413.5,766.1,411.8,767.5,411.6,772.6z"/>
+		<path class="st18" d="M451.3,773.4c-1.9,1.3-0.7,3-7.6,6c-7.2,3.1-18.1,2.8-25.3-0.3c-5.1-2.3-5.4-4.8-6.8-6.7
+			c-0.2,4.5,1.9,7.2,5.7,9c3.9,1.9,7.9,2.9,13.5,3C440.4,784.7,451.5,781.3,451.3,773.4z"/>
+	</g>
+	<g id="but3">
+		<path class="st19" d="M288.2,772.8c1.7,3.1,3,4.7,6.8,6.4c7.3,3.2,17.8,3.5,25.2,0.4c4.8-2.1,4.6-2.9,7.6-6.1
+			c0-2.8,0.4-3.7-1.3-5.9c-5.6-7.4-22.9-8.6-32.4-3.7C290.1,766,288.2,768.2,288.2,772.8z"/>
+		<path class="st20" d="M327.8,773.4c-3,3.2-2.7,4.1-7.6,6.1c-7.4,3.1-18,2.8-25.2-0.4c-3.8-1.7-5-3.3-6.8-6.4
+			c-0.1,5,1.8,6.7,5.9,8.9c3.5,1.8,8.4,2.8,13.6,2.9C317.6,784.6,328.1,781.3,327.8,773.4z"/>
+	</g>
+	<g id="but2">
+		<path class="st6" d="M224.2,772.6c1.4,1.8,1.7,4.4,6.8,6.7c7.2,3.1,18.1,3.5,25.3,0.3c6.9-3,5.7-4.8,7.6-6c0-2.6,0.1-4.1-1.4-5.9
+			c-5.1-7-23.1-8.7-32.2-3.8C226.1,766.1,224.4,767.5,224.2,772.6z"/>
+		<path class="st21" d="M263.9,773.4c-1.9,1.3-0.7,3-7.6,6c-7.2,3.1-18.1,2.8-25.3-0.3c-5.1-2.3-5.4-4.8-6.8-6.7
+			c-0.2,4.5,1.9,7.2,5.7,9c3.9,1.9,7.9,2.9,13.5,3C253,784.7,264.1,781.3,263.9,773.4z"/>
+	</g>
+	<g id="but4">
+		<path class="st22" d="M351.8,772.8c1,1.1,1.6,2.6,2.7,3.6c1,0.9,2.7,2.1,4.2,2.8c9,4.1,25.7,4,32.2-5l0.7-0.9
+			c-0.1-5.1-1.4-7-5.6-9.2c-7.6-4.1-20.1-4.3-28-0.3C354,765.8,351.9,767.7,351.8,772.8z"/>
+		<path class="st23" d="M391.5,773.3l-0.7,0.9c-6.5,9-23.2,9-32.2,5c-1.6-0.7-3.2-1.8-4.2-2.8c-1.1-1-1.6-2.5-2.7-3.6
+			c0,4.7,2.3,7,6,8.9c3.6,1.8,8.4,2.8,13.6,2.9C381.5,784.6,391.7,781,391.5,773.3z"/>
+	</g>
+</g>
 <g id="slot3">
 	<path id="slot1_1_" class="st4" d="M318.7,753.4h49c20.9,0,44.6,0.3,65-0.1l-0.1-104.7c-37.3-0.2-76.9,0.4-113.9-0.1V753.4
 		L318.7,753.4z"/>
@@ -109,7 +138,6 @@
 	<path id="slot1_3_" class="st4" d="M439,753.4h49c20.9,0,44.6,0.3,65-0.1l-0.1-104.7c-37.3-0.2-76.9,0.4-113.9-0.1L439,753.4
 		L439,753.4z"/>
 </g>
-
 <g class="st24">
 	<path class="st14" d="M277.8,616.3c0,0.5-0.1,1.2-0.2,1.9c0,0-0.1,0-0.1-0.1c-0.1,0-0.1,0.2-0.1,0.3l0,0.3c0,0.1-0.1,0.3-0.2,0.6
 		c-0.1,0.1-0.2,0.2-0.3,0.4c0,0.1-0.1,0.3-0.2,0.5c-0.4,0.5-0.7,0.8-1.1,0.9c-0.2,0.1-0.4,0.3-0.6,0.5c-0.8,0.4-1.7,0.6-2.6,0.6
@@ -568,285 +596,3 @@
 		c1.3-1,2.6-1.8,3.7-2.7C581.7,822.8,584,820.6,585.3,817.7z"/>
 </g>
 </svg>
-
-</div>
-
-<div class="lever-box sm_svg">
-<svg version="1.1" id="slotmachine" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="5.3 572.8 612 264.1" style="enable-background:new 5.3 572.8 612 264.1;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#373737;}
-	.st1{fill:#353535;}
-	.st2{fill:#575757;stroke:#FBD827;stroke-miterlimit:10;}
-	.st3{fill:#575757;}
-	.st4{fill:#FDFDFD;}
-	.st5{fill:none;}
-	.st6{fill:#ED5D52;}
-	.st7{display:none;fill:#1A1A1A;}
-	.st8{display:none;fill:#575757;}
-	.st9{display:none;fill:#1F1F1F;}
-	.st10{display:none;fill:#595959;}
-	.st11{display:none;fill:#121212;}
-	.st12{fill:#FCD424;}
-	.st13{fill:#FED626;}
-	.st14{fill:#FCD828;}
-	.st15{fill:#E67E22;}
-	.st16{fill:#D35400;}
-	.st17{fill:#3498DB;}
-	.st18{fill:#2980B9;}
-	.st19{fill:#F0DEB4;}
-	.st20{fill:#D5C295;}
-	.st21{fill:#BB3A39;}
-	.st22{fill:#34495E;}
-	.st23{fill:#2C3E50;}
-	.st24{enable-background:new    ;}
-	.st25{fill:#D52821;}
-	.st26{fill:#D62821;}
-</style>
-<g id="Buttons">
-	<g id="but1">
-		<path class="st15" d="M164.7,772.8c1.1,1.1,1.6,2.6,2.7,3.6c1,0.9,2.7,2.1,4.3,2.8c8.9,4.1,25.6,4,32.2-5l0.7-0.9
-			c-0.1-5.1-1.4-7-5.5-9.2c-7.7-4.1-20.1-4.3-28-0.3C167,765.8,164.8,767.7,164.7,772.8z"/>
-		<path class="st16" d="M204.5,773.3l-0.7,0.9c-6.5,9-23.2,9-32.2,5c-1.6-0.7-3.3-1.8-4.3-2.8c-1.1-1-1.6-2.5-2.7-3.6
-			c0,4.7,2.3,7,6,8.9c3.6,1.8,8.4,2.8,13.6,2.9C194.5,784.6,204.8,781,204.5,773.3z"/>
-	</g>
-	<g id="but5">
-		<path class="st17" d="M411.6,772.6c1.4,1.8,1.7,4.4,6.8,6.7c7.2,3.1,18.1,3.5,25.3,0.3c6.9-3,5.7-4.8,7.6-6c0-2.6,0.1-4.1-1.4-5.9
-			c-5.1-7-23.1-8.7-32.2-3.8C413.5,766.1,411.8,767.5,411.6,772.6z"/>
-		<path class="st18" d="M451.3,773.4c-1.9,1.3-0.7,3-7.6,6c-7.2,3.1-18.1,2.8-25.3-0.3c-5.1-2.3-5.4-4.8-6.8-6.7
-			c-0.2,4.5,1.9,7.2,5.7,9c3.9,1.9,7.9,2.9,13.5,3C440.4,784.7,451.5,781.3,451.3,773.4z"/>
-	</g>
-	<g id="but3">
-		<path class="st19" d="M288.2,772.8c1.7,3.1,3,4.7,6.8,6.4c7.3,3.2,17.8,3.5,25.2,0.4c4.8-2.1,4.6-2.9,7.6-6.1
-			c0-2.8,0.4-3.7-1.3-5.9c-5.6-7.4-22.9-8.6-32.4-3.7C290.1,766,288.2,768.2,288.2,772.8z"/>
-		<path class="st20" d="M327.8,773.4c-3,3.2-2.7,4.1-7.6,6.1c-7.4,3.1-18,2.8-25.2-0.4c-3.8-1.7-5-3.3-6.8-6.4
-			c-0.1,5,1.8,6.7,5.9,8.9c3.5,1.8,8.4,2.8,13.6,2.9C317.6,784.6,328.1,781.3,327.8,773.4z"/>
-	</g>
-	<g id="but2">
-		<path class="st6" d="M224.2,772.6c1.4,1.8,1.7,4.4,6.8,6.7c7.2,3.1,18.1,3.5,25.3,0.3c6.9-3,5.7-4.8,7.6-6c0-2.6,0.1-4.1-1.4-5.9
-			c-5.1-7-23.1-8.7-32.2-3.8C226.1,766.1,224.4,767.5,224.2,772.6z"/>
-		<path class="st21" d="M263.9,773.4c-1.9,1.3-0.7,3-7.6,6c-7.2,3.1-18.1,2.8-25.3-0.3c-5.1-2.3-5.4-4.8-6.8-6.7
-			c-0.2,4.5,1.9,7.2,5.7,9c3.9,1.9,7.9,2.9,13.5,3C253,784.7,264.1,781.3,263.9,773.4z"/>
-	</g>
-	<g id="but4">
-		<path class="st22" d="M351.8,772.8c1,1.1,1.6,2.6,2.7,3.6c1,0.9,2.7,2.1,4.2,2.8c9,4.1,25.7,4,32.2-5l0.7-0.9
-			c-0.1-5.1-1.4-7-5.6-9.2c-7.6-4.1-20.1-4.3-28-0.3C354,765.8,351.9,767.7,351.8,772.8z"/>
-		<path class="st23" d="M391.5,773.3l-0.7,0.9c-6.5,9-23.2,9-32.2,5c-1.6-0.7-3.2-1.8-4.2-2.8c-1.1-1-1.6-2.5-2.7-3.6
-			c0,4.7,2.3,7,6,8.9c3.6,1.8,8.4,2.8,13.6,2.9C381.5,784.6,391.7,781,391.5,773.3z"/>
-	</g>
-</g>
-
-<g id="lever">
-	<rect id="stick" x="588.6" y="676.7" class="st3" width="8.9" height="56"/>
-	<path id="bulb" class="st6" d="M588.9,679.9c3.6,0.6,4.5,0.4,8.3,0.1c19.3-4.8,14.1-24.2-3.4-24.7c-8.6-0.2-15.6,4.8-16.6,10.4
-		C575.9,672.9,581.9,678.5,588.9,679.9z"/>
-</g>
-
-</svg>
-</div>
-
-
-<div class="spons-wrapper">
-	<div class="spons-box">
-	<div class="spons-out">
-		<div class="spons-tile sprite s1">
-			
-		</div>
-		<div class="spons-tile sprite s2">
-			
-		</div>
-		<div class="spons-tile sprite s3">
-			
-		</div>
-		<div class="spons-tile sprite s4">
-			
-		</div>
-	</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-setInterval(function () {
-	$('#Lights').fadeOut('fast');
-	setTimeout(function () {
-		 $('#Lights').fadeIn('fast');
-		}, 500);
-}, 1000);
-
-
-function leverpull () {
-$('#stick').animate({  borderSpacing: 90 }, {
-    step: function(now,fx) {
-      $(this).css('transform','rotateX('+now+'deg)');
-    },
-    duration:600
-},'linear');
-$('#bulb').animate({  borderSpacing: 280 }, {
-    step: function(now,fx) {
-      $(this).css('transform','translateY('+now+'%)');
-    },
-    duration:600
-},'linear');
-
-setTimeout(function () {
-	// $('#stick').css('transform-origin', 'bottom');
-	$('#stick').animate({  borderSpacing: 0 }, {
-    step: function(now,fx) {
-      $(this).css('transform','rotateX('+now+'deg)');
-    },
-    duration:600
-},'linear');
-$('#bulb').animate({  borderSpacing: 0 }, {
-    step: function(now,fx) {
-      $(this).css('transform','translateY('+now+'%)');
-    },
-    duration:600
-},'linear');
-}, 600);
-};
-
-$( document ).ready(function() {
-    randomspons();
-});
-
-// var i=1;
-
-// setInterval(function () {
-// 	i++;
-// 	var blink = $('.blink:nth-child('+i+')');
-// 	console.log(i);
-// 	console.log(blink);
-// 		blink.css('display','none');
-// 	setTimeout(function () {
-// 		blink.css('display','block');
-// 	}, 1000);
-// 	if (i===34)
-// 		i=1;
-// }, 1500);
-
-// $('#lever').click(function() {
-// 	$('#stick').animate({transform: 'rotateX(-100deg)', transform-origin: 'bottom'}, '600');
-// 	$('#ball').animate({transform: 'translateY(300%)'}, '600');
-// });
-$('#lever').click(function(){
-	leverpull();
-	randomspons();
-}
-);
-
-var randomspons;
-
-(function( $ ) {
-	$.fn.animateBgPosition = function( x, y, speed ) {
-    	var pos = this.css( "background-position" ).split( " " );
-    	
-    	
-		this.x = parseInt( pos[0], 10 ) || 0;
-		this.y = parseInt( pos[1], 10 ) || 0;
-    
-    	$.Animation( this, {
-        	x: x,
-			y: y
-      	}, { 
-        	duration: speed
-      	}).progress( function( e ) {
-          	this.css( "background-position", e.tweens[0].now + "px " + e.tweens[1].now + "px" );
-    	});
-		
-		return this;
-	};
-	
-	
-	
-	randomspons = function () {
-	for (i=1; i<5; i++){
-		ranNum = Math.floor(Math.random() * (19 - 0 + 0));
-		console.log(ranNum);
-		// console.log($('.spons-out:nth-child('+ i +')'));
-		// var regmat = /spons[0-9]+/;
-		// console.log($('.spons-tile:nth-child('+ i +')').attr('class').match(regmat)[0]);
-		// $('.spons-tile:nth-child('+ i +')').removeClass($('.spons-tile:nth-child('+ i +')').attr('class').match(regmat)[0]).addClass('spons'+ranNum);
-		console.log($('.s'+i));
-		// $('.s'+i).animate(
-		// 	{background-position : '0 ' + spon[ranNum]+'vw'}, 
-		// 	{duration:500});
-
-		var ypos = spon[ranNum]*$(window).width()/100;
-		$('.s'+i).animateBgPosition( 0, ypos, 1000 );
-	}
-
-}
-
-	$('#but1').click(function() {
-		$('.s1').animateBgPosition( 0, spon[0]*$(window).width()/100, 1000 );
-		$('.s2').animateBgPosition( 0, spon[1]*$(window).width()/100, 1000 );
-		$('.s3').animateBgPosition( 0, spon[2]*$(window).width()/100, 1000 );
-		$('.s4').animateBgPosition( 0, spon[3]*$(window).width()/100, 1000 );
-	});
-
-	$('#but2').click(function() {
-		$('.s1').animateBgPosition( 0, spon[4]*$(window).width()/100, 1000 );
-		$('.s2').animateBgPosition( 0, spon[5]*$(window).width()/100, 1000 );
-		$('.s3').animateBgPosition( 0, spon[6]*$(window).width()/100, 1000 );
-		$('.s4').animateBgPosition( 0, spon[7]*$(window).width()/100, 1000 );
-	});
-
-	$('#but3').click(function() {
-		$('.s1').animateBgPosition( 0, spon[8]*$(window).width()/100, 1000 );
-		$('.s2').animateBgPosition( 0, spon[9]*$(window).width()/100, 1000 );
-		$('.s3').animateBgPosition( 0, spon[10]*$(window).width()/100, 1000 );
-		$('.s4').animateBgPosition( 0, spon[11]*$(window).width()/100, 1000 );
-	});
-
-	$('#but4').click(function() {
-		$('.s1').animateBgPosition( 0, spon[12]*$(window).width()/100, 1000 );
-		$('.s2').animateBgPosition( 0, spon[13]*$(window).width()/100, 1000 );
-		$('.s3').animateBgPosition( 0, spon[14]*$(window).width()/100, 1000 );
-		$('.s4').animateBgPosition( 0, spon[15]*$(window).width()/100, 1000 );
-	});
-
-	$('#but5').click(function() {
-		$('.s1').animateBgPosition( 0, spon[16]*$(window).width()/100, 1000 );
-		$('.s2').animateBgPosition( 0, spon[17]*$(window).width()/100, 1000 );
-		$('.s3').animateBgPosition( 0, spon[18]*$(window).width()/100, 1000 );
-		$('.s4').animateBgPosition( 0, spon[19]*$(window).width()/100, 1000 );
-	});
-	
-})( jQuery );
-
-
-var spon = [0,
- -275 / 12.8,
- -550 / 12.8,
- -825 / 12.8,
- -1100 / 12.8,
- -1375 / 12.8,
- -1650 / 12.8,
- -1925 / 12.8,
- -2200 / 12.8,
-  -2475 / 12.8,
-  -2750 / 12.8,
-  -3025 / 12.8,
-  -3300 / 12.8,
-  -3575 / 12.8,
-  -3850 / 12.8,
-  -4125 / 12.8,
-  -4400 / 12.8,
-  -4675 / 12.8,
-  -4950 / 12.8,
-  -5225 / 12.8];
-
-
-
-// var change = $('.sprite')
-// change.each(function(index, el) {
-// 	console.log(el);
-// 	var pos = $(el).css('background-position');
-// 	console.log(pos);
-// });
-
-
-
-</script>
-</body>
-</html>
