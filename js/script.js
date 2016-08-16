@@ -14,6 +14,13 @@ $(window).resize(function(){
     top: ($(window).height() - $('.nav').outerHeight())/2
   });
 });
+//
+// var football=getElementById('football');
+//
+// football.setAttribute('x',(window.innerWidth-football.getBBox().width)/2);
+// football.setAttribute('y',(window.innerHeight-football.getBBox().height)/2);
+
+
 
 $('.option img').click(function(){
   $('.loader').removeClass('zoomIn');

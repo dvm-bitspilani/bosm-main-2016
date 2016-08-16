@@ -454,11 +454,11 @@ text:not(.imp){
 }
 
 .black {
-  background: url('../img/chessBlack.png');
+  background: #000;
 }
 
 .white {
-  background: url('../img/chess_white.svg');
+  background: #DDD;
 }
 
 /** LIGHTBOX MARKUP **/
