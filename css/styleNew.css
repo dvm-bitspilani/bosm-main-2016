@@ -1136,6 +1136,27 @@ z-index: 4;
 width: 10vw;
 }
 
+@media screen and (max-width:1000px) {
+    .logRegButton{
+      width: 130px;
+    }
+}
+
+@media screen and(max-width:900px){
+  .logo2 img{
+    width:24vw;
+  }
+}
+@media screen and (max-width:500px) {
+    .logRegButton{
+      bottom: 2vh;
+      width: 105px;
+    }
+
+    .logo2 img{
+      width: 150px;
+    }
+}
 .noClick{
   pointer-events: none;
 }

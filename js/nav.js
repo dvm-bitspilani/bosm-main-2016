@@ -98,7 +98,7 @@ finalBall.parentNode.setAttribute('y',(window.innerHeight-finalBall.getBBox().he
 
 var flag=false;
 function end(ele){
-  console.log(ele);
+  // console.log(ele);
     ele.style.display='none';
     finalBall.style.opacity='1';
 

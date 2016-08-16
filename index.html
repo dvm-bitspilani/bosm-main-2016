@@ -111,7 +111,7 @@ d="m 0 0c 3.43057,2.94164 6.18358,6.67654 7.96874,10.82965 3.13001,7.18939 3.234
             style="font-size:16.25px">Home</tspan></text> -->
 
    <g
-     id="finalBall"  page="1">
+     id="finalBall">
      <g
      id="Layer_1"
      transform="matrix(0.58536248,0,0,0.58536248,-97.696999,-204.58418)"><ellipse
@@ -973,10 +973,10 @@ d="m 0 0c 3.43057,2.94164 6.18358,6.67654 7.96874,10.82965 3.13001,7.18939 3.234
 
 <div class='logRegButton'>
 
-<a href="register.html" target="_blank">
+<a href="./2016/account/register" target="_blank">
   <img src='img/regisButton.svg' />
 </a>
-<a href="login.html" target="_blank">
+<a href="./2016/account/login" target="_blank">
   <img src='img/loginButton.svg' />
 </a>
 </div>
@@ -1038,7 +1038,7 @@ d="m 0 0c 3.43057,2.94164 6.18358,6.67654 7.96874,10.82965 3.13001,7.18939 3.234
 		</div>
 	</div>
 	<div class="tube_path " id="odd_path" >
-    <div   class="tube floating  tube1 chess" id="modal-trigger" data-type="cd-modal-trigger" type='12' data-tooltip="hi">
+    <div   class="tube floating  tube1 chess" id="modal-trigger" data-type="cd-modal-trigger" type='9' data-tooltip="hi">
 
 
         <div class="tooltiptext-top"></div>
@@ -2252,6 +2252,16 @@ function load(){
   $('#outer').hide();
   $('.inner').show();
 };
+
+$(document).click(function(eve){
+  if(eve.target.getAttribute('class')!==null)
+  if(eve.target.getAttribute('class').search('mainNav')!=-1){
+    var page=$('.pt-page-current').attr('class').split(' ')[1];
+    var pageNum=page.charAt(page.length-1);
+    $('g[page='+pageNum+']').click();
+    // $('.ball').click();
+  }
+})
 
 </script>
 </body>

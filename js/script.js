@@ -492,12 +492,12 @@ var randomspons;
 	randomspons = function () {
 	for (i=1; i<5; i++){
 		ranNum = Math.floor(Math.random() * (19 - 0 + 0));
-		console.log(ranNum);
+		// console.log(ranNum);
 		// console.log($('.spons-out:nth-child('+ i +')'));
 		// var regmat = /spons[0-9]+/;
 		// console.log($('.spons-tile:nth-child('+ i +')').attr('class').match(regmat)[0]);
 		// $('.spons-tile:nth-child('+ i +')').removeClass($('.spons-tile:nth-child('+ i +')').attr('class').match(regmat)[0]).addClass('spons'+ranNum);
-		console.log($('.s'+i));
+		// console.log($('.s'+i));
 		// $('.s'+i).animate(
 		// 	{background-position : '0 ' + spon[ranNum]+'vw'},
 		// 	{duration:500});

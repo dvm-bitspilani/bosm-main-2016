@@ -46,7 +46,6 @@ var PageTransitions = (function() {
 				return false;
 			}
 			var page=parseInt($(this).attr('page'));
-			console.log(page);
 			if(page!=(current+1))
 			nextPage( page -1);
 		} );
@@ -71,7 +70,6 @@ var PageTransitions = (function() {
 		// console.log();
 		// current=options.getAttribute('page');
 		var $currPage = $pages.eq( current );
-		console.log(current);
 		// console.log(options.showPage);
 
 			if( current < pagesCount - 1 ) {
@@ -83,7 +81,6 @@ var PageTransitions = (function() {
 			}
 		// current
 
-		console.log(current);
 
 		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
 				outClass = 'pt-page-rotateFall pt-page-ontop',
