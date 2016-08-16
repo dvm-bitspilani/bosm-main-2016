@@ -163,7 +163,7 @@ text:not(.imp){
 
 .swim{
   position: absolute;
-  z-index: 3;
+  /*z-index: 3;*/
   top:0;
   left:0;
   width:100vw;
@@ -223,6 +223,7 @@ text:not(.imp){
 }
 
 .tube {
+  cursor: pointer;
     height: 16vh;
     width: 16vh;
         background-size: 16vh 16vh !important;
@@ -562,6 +563,8 @@ text:not(.imp){
   text-align: justify;
   margin:auto 5vw;
   overflow-y: auto;
+  height: 50vh;
+text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -998,6 +1001,7 @@ Modal Window
 }
 
 #ballWrap{
+  cursor: pointer;
   display: none;
   position: absolute;
   z-index: 4;
@@ -1107,6 +1111,20 @@ height: 70px;
 
 .logo2 img{
   width: 20vw;
+}
+
+.develop{
+  position: absolute;
+  top:3vw;
+  right:3vw;;
+  z-index: 4;
+  width:5vw;
+}
+
+.develop img{
+  cursor: pointer;
+  position: relative;
+  width: 100%;
 }
 
 .logRegButton{

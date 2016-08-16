@@ -149,7 +149,7 @@ $(document).ready(function(){
         	$(this).html('For Website Related Queries').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('webmaster@bits-bosm.org').fadeIn();
+        	$(this).html('Nikhil Verma<br> +91-992883465<br>webmaster@bits-bosm.org').fadeIn();
         });
     });
     $("#WebMaster").mouseleave(function(){
@@ -620,24 +620,20 @@ var content={
 
 $('.tube').click(function(){
   var sport=$(this).attr('type').split(' ');
-  var data="<div>\r\n<div>\r\n<div><strong>BOYS:&nbsp;</strong></div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>Rules:</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>1. &nbsp; &nbsp;Format of Play : Best of 5(in the order), Singles, Singles,Doubles,Singles, Doubles.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>2. &nbsp; &nbsp;Each match(singles/doubles) is best of 3 sets of 21 points.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>3. &nbsp; &nbsp;Teams for every game are submitted before the match (specifying who will be playing 1st singles,2nd singles, 1st doubles and 3rd singles, and 2nd doubles). This team can not be changed after submission.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>4. &nbsp; &nbsp;Latest IBF rules will be followed.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>5. &nbsp; &nbsp;Teams of maximum 6 players and minimum 4 players.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>6. &nbsp; &nbsp;Only three players can play in two matches (one singles and one doubles)</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div><strong>GIRLS&nbsp;</strong></div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>Rules:</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>1. &nbsp; &nbsp; Format &nbsp;of &nbsp;Play &nbsp;: &nbsp;Best &nbsp;of &nbsp;3(in &nbsp;the &nbsp;order), &nbsp;Singles, &nbsp;Doubles, Singles.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>2. &nbsp; &nbsp;Each match(singles/doubles) is best of 3 sets of 21 points.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>3. &nbsp; &nbsp;Teams for every game are submitted before the match (specifying who will be playing 1st singles,doubles and 2nd singles). This team can not be changed after submission.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>4. &nbsp; &nbsp;Latest BWF rules will be followed.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>5. &nbsp; &nbsp;Teams of maximum 4 players and minimum 3 players.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>6. &nbsp; &nbsp;Only one player can play in two matches (one singles and one doubles)</div>\r\n\r\n<div>&nbsp;</div>\r\n</div>\r\n</div>";
-  data+="<div>\r\n<div>\r\n<div><strong>BOYS:&nbsp;</strong></div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>Rules:</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>1. &nbsp; &nbsp;Format of Play : Best of 5(in the order), Singles, Singles,Doubles,Singles, Doubles.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>2. &nbsp; &nbsp;Each match(singles/doubles) is best of 3 sets of 21 points.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>3. &nbsp; &nbsp;Teams for every game are submitted before the match (specifying who will be playing 1st singles,2nd singles, 1st doubles and 3rd singles, and 2nd doubles). This team can not be changed after submission.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>4. &nbsp; &nbsp;Latest IBF rules will be followed.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>5. &nbsp; &nbsp;Teams of maximum 6 players and minimum 4 players.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>6. &nbsp; &nbsp;Only three players can play in two matches (one singles and one doubles)</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div><strong>GIRLS&nbsp;</strong></div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>Rules:</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>1. &nbsp; &nbsp; Format &nbsp;of &nbsp;Play &nbsp;: &nbsp;Best &nbsp;of &nbsp;3(in &nbsp;the &nbsp;order), &nbsp;Singles, &nbsp;Doubles, Singles.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>2. &nbsp; &nbsp;Each match(singles/doubles) is best of 3 sets of 21 points.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>3. &nbsp; &nbsp;Teams for every game are submitted before the match (specifying who will be playing 1st singles,doubles and 2nd singles). This team can not be changed after submission.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>4. &nbsp; &nbsp;Latest BWF rules will be followed.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>5. &nbsp; &nbsp;Teams of maximum 4 players and minimum 3 players.</div>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<div>6. &nbsp; &nbsp;Only one player can play in two matches (one singles and one doubles)</div>\r\n</div>\r\n</div>";
-  var res=data.replace(/div/g,'p');
-  // var url="http://bits-bosm.org/2016/events/";
-  // sport.map(function(ele){
-  //   console.log(url+ele+'/');
-  //   $.ajax({
-  //     type:'GET',
-  //     url:url+ele+'/',
-  //   //  dataType:'jsonp',
-  //   //  jsonpCallback:'callback'
-  //     // contentType: "application/json",
-  //     success:function(response){
-  //       console.log(response);
-  //     }
-  //   });
+  var data="<h1>Coming Soon</h1>";
+  var url="http://bits-bosm.org/2016/events/";
+  sport.map(function(ele){
+    console.log(url+ele+'/');
+    $.ajax({
+      type:'GET',
+      url:url+ele+'/',
+      success:function(response){
+        data=response.content
+      }
+    });
+    var res=data.replace(/div/g,'p');
+    $('.cd-modal-content').html(res);
 
 
-  $('.cd-modal-content').html(res);
 
 });
