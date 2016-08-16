@@ -621,6 +621,7 @@ var content={
 $('.tube').click(function(){
   var sport=$(this).attr('type').split(' ');
   var data="<h1>Coming Soon</h1>";
+$('.cd-modal-content').html('');
   var url="http://bits-bosm.org/2016/events/";
   sport.map(function(ele){
     console.log(url+ele+'/');
@@ -628,11 +629,12 @@ $('.tube').click(function(){
       type:'GET',
       url:url+ele+'/',
       success:function(response){
-        data=response.content
+        data=response.content.replace(/div/g,'p');
+        $('.cd-modal-content').html(data);
+
       }
     });
-    var res=data.replace(/div/g,'p');
-    $('.cd-modal-content').html(res);
+});
 
 
 
