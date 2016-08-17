@@ -626,9 +626,9 @@ var content={
 }
 
 $('.tube').click(function(){
+  var type=$(this).attr('class').split(' ').pop();
   var sport=$(this).attr('type').split(' ');
   var data="<h1>Coming Soon</h1>";
-  var response={"content": "<h4><strong>MEN TEAM</strong></h4>\r\n\r\n<p><strong>Rules:</strong></p>\r\n\r\n<p>Format Of Play : singles(A vs X),singles(B vs Y), doubles and reverse singles(A vs Y &amp; B vs X).</p>\r\n\r\n<p>All games will be best of 5.</p>\r\n\r\n<p>Players playing singles won&#39;t be allowed to repeat in doubles.</p>\r\n\r\n<p>Maximum number of 5 and minimum number of 4 players are allowed in a team.</p>\r\n\r\n<h4><strong>WOMEN TEAM</strong></h4>\r\n\r\n<p><strong>Rules</strong></p>\r\n\r\n<p>It is a team event requiring a minimum of 3 players and a maximum of 4 players.</p>\r\n\r\n<p>The event will consist of 5 sets and every set will comprise 5 games of 11 points each.</p>\r\n\r\n<p>Description of the 5 sets is as follows:</p>\r\n\r\n<p>First two sets are singles matches,to be played by two different players A and B.</p>\r\n\r\n<p>Third set is a doubles match, to be played by either two new players (C and D) or one new player(C or D) and and one of the single players(A or B).</p>\r\n\r\n<p>The fourth and fifth set are reverse singles matches to be played by players(A and B).</p>\r\n\r\n<h4><strong>MIXED TEAM</strong></h4>\r\n\r\n<p><strong>Rules:</strong></p>\r\n\r\n<p>Max. 2 entries per college are allowed.</p>\r\n\r\n<p>The format will be singles(men),singles(girls) and doubles(mixed).</p>\r\n\r\n<p>Minimum number of players per team required will be 2.</p>\r\n\r\n<p>All games will be best of 5.</p>", "name": "Table Tennis (Boys)"};
   $('.cd-modal-content').html('');
   var url="http://bits-bosm.org/2016/events/";
   sport.map(function(ele){
@@ -637,7 +637,7 @@ $('.tube').click(function(){
       type:'GET',
       url:url+ele+'/',
       success:function(response){
-        data='<h1>'+response.name+'</h1>';
+        data='<h1 style="text-transform:capitalize">'+type+'</h1>';
         data+=response.content.replace(/div/g,'p');
         $('.cd-modal-content').html(data);
         // data=response.content.replace(/div/g,'p');
