@@ -938,6 +938,12 @@ Modal Window
     font-size: 1.8rem;
     margin: 2rem 0;
   }
+.cd-modal-content h1 {
+  color: white;
+font-size: 2.4rem;
+margin: 2rem 0px;
+text-align: center;
+  }
 .modal-is-visible .cd-modal-content {
   opacity: 1;
   -webkit-transform: translateY(0);
