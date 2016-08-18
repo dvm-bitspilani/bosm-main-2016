@@ -69,10 +69,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -102,10 +102,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -136,10 +136,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -169,10 +169,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -202,10 +202,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -235,10 +235,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("down");
         $("#Registration").removeClass("down");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -268,10 +268,10 @@ $(document).ready(function(){
         $("#Sec_3").removeClass("right");
         $("#Registration").removeClass("right");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -328,10 +328,10 @@ $(document).ready(function(){
         $("#Spons").removeClass("left");
         $("#Sec_3").removeClass("left");
         $('.conHead').fadeOut(function() {
-        	$(this).html('Contacts').fadeIn();
+        	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Move your mouse over any puzzle piece for details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -636,6 +636,7 @@ $('.tube').click(function(){
     $.ajax({
       type:'GET',
       url:url+ele+'/',
+      crossDomain:true,
       success:function(response){
         data='<h1 style="text-transform:capitalize">'+type+'</h1>';
         data+=response.content.replace(/div/g,'p');

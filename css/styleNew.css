@@ -277,8 +277,8 @@ text:not(.imp){
   background-size: 20vh 20vh;
 }
 
-.billiard{
-  background: url('../img/events/billiard.svg') no-repeat;
+.snooker{
+  background: url('../img/events/snooker.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
@@ -333,8 +333,8 @@ text:not(.imp){
   background-size: 20vh 20vh;
 }
 
-.weightlifting{
-  background: url('../img/events/weightlifting.svg') no-repeat;
+.powerlifting{
+  background: url('../img/events/powerlifting.svg') no-repeat;
   background-size: 20vh 20vh;
 }
 
@@ -925,7 +925,7 @@ Modal Window
   -moz-transition: opacity 0.3s 0s, -moz-transform 0.3s 0s;
   transition: opacity 0.3s 0s, transform 0.3s 0s;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-wefont-smoothing: grayscale;
 }
 .cd-modal-content p {
   color: #f2f2f2;
