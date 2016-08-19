@@ -156,7 +156,7 @@ $(document).ready(function(){
         	$(this).html('For Website Related Queries').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Nikhil Verma<br> +91-992883465<br>webmaster@bits-bosm.org').fadeIn();
+        	$(this).html('Nikhil Verma<br> +91-9928834365<br>webmaster@bits-bosm.org').fadeIn();
         });
     });
     $("#WebMaster").mouseleave(function(){
