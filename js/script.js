@@ -630,7 +630,7 @@ $('.tube').click(function(){
   var sport=$(this).attr('type').split(' ');
   var data="<h1>Coming Soon</h1>";
   $('.cd-modal-content').html('');
-  var url="http://bits-bosm.org/2016/events/";
+  var url="./2016/events/";
   sport.map(function(ele){
     console.log(url+ele+'/');
     $.ajax({
