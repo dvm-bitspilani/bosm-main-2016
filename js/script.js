@@ -72,7 +72,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -105,7 +105,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -139,7 +139,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -172,7 +172,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -205,7 +205,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -238,7 +238,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -271,7 +271,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
@@ -315,7 +315,7 @@ $(document).ready(function(){
         	$(this).html('For Correspondence and Registration').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org').fadeIn();
         });
     });
     $("#Registration").mouseleave(function(){
@@ -331,7 +331,7 @@ $(document).ready(function(){
         	$(this).html('Contact').fadeIn();
         });
         $('.conText').fadeOut(function() {
-        	$(this).html('Karthik Maddipoti<br> +91-7240105158<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
+        	$(this).html('Karthik Maddipoti<br> +91-7240105158 / +91-9829491835<br>+91-9829493083 / +91-9928004772<br>+91-9928004778<br> pcr@bits-bosm.org<br><br>Move your mouse over any puzzle piece for more details').fadeIn();
         });
     });
 
