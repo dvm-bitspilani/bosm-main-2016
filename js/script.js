@@ -482,7 +482,7 @@ $('#lever').click(function(){
 setInterval(function () {
     leverpull();
     randomspons();
-}, 3000);
+}, 5000);
 
 var randomspons;
 
@@ -523,43 +523,65 @@ var randomspons;
 
 		var ypos = spon[ranNum]*$(window).width()/100;
 		$('.s'+i).animateBgPosition( 0, ypos, 1000 );
+    $('.s'+i+' a').attr('href', sponlink[ranNum]);
+
 	}
 
 }
 
 	$('#but1').click(function() {
 		$('.s1').animateBgPosition( 0, spon[0]*$(window).width()/100, 1000 );
+    $('.s1 a').attr('href', sponlink[0]);
 		$('.s2').animateBgPosition( 0, spon[1]*$(window).width()/100, 1000 );
+    $('.s2 a').attr('href', sponlink[1]);
 		$('.s3').animateBgPosition( 0, spon[2]*$(window).width()/100, 1000 );
+    $('.s3 a').attr('href', sponlink[2]);
 		$('.s4').animateBgPosition( 0, spon[3]*$(window).width()/100, 1000 );
+    $('.s4 a').attr('href', sponlink[3]);
 	});
 
 	$('#but2').click(function() {
 		$('.s1').animateBgPosition( 0, spon[4]*$(window).width()/100, 1000 );
+    $('.s1 a').attr('href', sponlink[4]);
 		$('.s2').animateBgPosition( 0, spon[5]*$(window).width()/100, 1000 );
+    $('.s2 a').attr('href', sponlink[5]);
 		$('.s3').animateBgPosition( 0, spon[6]*$(window).width()/100, 1000 );
+    $('.s3 a').attr('href', sponlink[6]);
 		$('.s4').animateBgPosition( 0, spon[7]*$(window).width()/100, 1000 );
+    $('.s4 a').attr('href', sponlink[7]);
 	});
 
 	$('#but3').click(function() {
 		$('.s1').animateBgPosition( 0, spon[8]*$(window).width()/100, 1000 );
+    $('.s1 a').attr('href', sponlink[8]);
 		$('.s2').animateBgPosition( 0, spon[9]*$(window).width()/100, 1000 );
+    $('.s2 a').attr('href', sponlink[9]);
 		$('.s3').animateBgPosition( 0, spon[10]*$(window).width()/100, 1000 );
+    $('.s3 a').attr('href', sponlink[10]);
 		$('.s4').animateBgPosition( 0, spon[11]*$(window).width()/100, 1000 );
+    $('.s4 a').attr('href', sponlink[11]);
 	});
 
 	$('#but4').click(function() {
 		$('.s1').animateBgPosition( 0, spon[12]*$(window).width()/100, 1000 );
+    $('.s1 a').attr('href', sponlink[12]);
 		$('.s2').animateBgPosition( 0, spon[13]*$(window).width()/100, 1000 );
+    $('.s2 a').attr('href', sponlink[13]);
 		$('.s3').animateBgPosition( 0, spon[14]*$(window).width()/100, 1000 );
+    $('.s3 a').attr('href', sponlink[14]);
 		$('.s4').animateBgPosition( 0, spon[15]*$(window).width()/100, 1000 );
+    $('.s4 a').attr('href', sponlink[15]);
 	});
 
 	$('#but5').click(function() {
 		$('.s1').animateBgPosition( 0, spon[16]*$(window).width()/100, 1000 );
+    $('.s1 a').attr('href', sponlink[16]);
 		$('.s2').animateBgPosition( 0, spon[17]*$(window).width()/100, 1000 );
+    $('.s2 a').attr('href', sponlink[17]);
 		$('.s3').animateBgPosition( 0, spon[18]*$(window).width()/100, 1000 );
+    $('.s3 a').attr('href', sponlink[18]);
 		$('.s4').animateBgPosition( 0, spon[19]*$(window).width()/100, 1000 );
+    $('.s4 a').attr('href', sponlink[19]);
 	});
 
 })( jQuery );
@@ -586,6 +608,27 @@ var spon = [0,
   -4950 / 12.8,
   -5225 / 12.8];
 
+  var sponlink = [
+  'http://www.antecindia.co.in',
+  'http://dubeat.com',
+  'http://www.fever.fm',
+  'http://www.hp.com',
+  'http://www.hungama.com',
+  'http://www.killerjeans.com',
+  'https://www.thecollegefever.com',
+  'http://www.hook2events.com',
+  'http://9xm.in',
+  'http://songdew.com',
+  'https://www.snickers.com',
+  'http://www.airtel.in',
+  'http://www.gatorade.com',
+  'http://www.pepsicoindia.co.in',
+  'http://www.56060.in/',
+  'https://www.oyorooms.com',
+  'http://www.twenty19.com',
+  'https://www.sports365.in',
+  'http://tuskertees.com',
+  'https://www.askme.com'];
 
 
 // var change = $('.sprite')
