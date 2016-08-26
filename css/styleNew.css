@@ -1119,18 +1119,132 @@ height: 70px;
   width: 20vw;
 }
 
-.develop{
+.marker{
+  cursor: pointer;
   position: absolute;
-  top:3vw;
-  right:3vw;;
-  z-index: 4;
-  width:5vw;
+top: 3vw;
+background: white;
+right: 6vw;
+z-index: 4;
+display: flex;
+/*padding: 5px 8px;*/
+border-radius: 7px;
+overflow: hidden;
 }
 
-.develop img{
-  cursor: pointer;
+
+.marker img{
+  /*position: absolute;*/
+  width:17px;
+  top:0;
+  left: 0;
+  /*margin: 4px 0;*/
+}
+
+.inner{
   position: relative;
-  width: 100%;
+background: black none repeat scroll 0% 0%;
+padding: 0px 12px;
+border-bottom-left-radius: 6px;
+}
+.marker p{
+  /*position: absolute;*/
+  top: 0;
+margin: 10px 6px;
+}
+
+.outerMarkerWindow{
+  display: flex;
+height: 100vh;
+position: absolute;
+width: 100vw;
+/*margin: auto;*/
+z-index: 5;
+}
+
+.outerOverlay{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
+.hidden{
+  display: none;
+}
+
+.closeMarker{
+  cursor: pointer;
+  position: absolute;
+right: 15px;
+top: 8px;
+}
+
+.innerMarkerWindow .content p{
+  text-indent: 30px;
+}
+.innerMarkerWindow .content{
+  padding: 0px 50px;
+  font-size: 1.2em;
+  height: 70%;
+overflow-y: scroll;
+}
+.innerMarkerWindow .header{
+  margin-top: 40px;
+  text-align: center;
+
+}
+.outerMarkerWindow{
+  cursor: url(../img/cross2.png), auto;
+}
+
+.innerMarkerWindow{
+  z-index: 7;
+  height: 90%;
+  cursor: auto;
+top: 5%;
+position: relative;
+background:rgba(255,255,255,0.9);
+width: 50%;
+left: 25%;
+box-shadow: 0 0 9px black;
+border-radius: 5px;
+font-family: 'Roboto Condensed', sans-serif;
+max-width: 700px;
+}
+
+
+@media screen and (max-width:800px) {
+  .innerMarkerWindow{
+    width: 70%;
+    left: 15%;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .marker{
+    right: 0vw;
+  }
+
+  .marker img{
+    width: 12px;
+  }
+
+  .marker p{
+    margin: 7px 0px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .innerMarkerWindow{
+    width: 90%;
+    left: 5%;
+  }
+
+  .innerMarkerWindow .content {
+    padding: 0px 17px;
+    font-size: 1em;
+  }
 }
 
 .logRegButton{

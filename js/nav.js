@@ -62,7 +62,7 @@ function moveSingleBall(ele,type){
   var nav=document.getElementById('navInner').getBBox();
   if(type=='off'){
     $('.arrow').removeClass('arrowShow');
-    $('.logo2,.logRegButton').fadeOut();
+    $('.logo2,.logRegButton,.marker').fadeOut();
     var eleX=ele.getBBox().x+(ele.getBBox().width/2);
     var eleY=ele.getBBox().y+(ele.getBBox().height/2);
     ballPlace.push({
@@ -77,7 +77,8 @@ function moveSingleBall(ele,type){
   }
   else if(type=='on'){
     $('.arrow').addClass('arrowShow');
-    $('.logo2,.logRegButton').fadeIn();
+    $('.logo2,.logRegButton,.marker').fadeIn();
+    $('.marker').css('display','flex');
 
       ele.style.display='block';
     ballPlace.map(function(arrEle){
@@ -130,7 +131,8 @@ function end(ele){
 
 $('#bc').click(function(){
   $('#finalBall').addClass('noClick');
-  $('.logo2,.logRegButton').fadeIn();
+  $('.logo2,.logRegButton,.marker').fadeIn();
+  $('.marker').css('display','flex');
   flag=true;
   $('.arrow').addClass('arrowShow');
     $(this).removeClass('menuOff');

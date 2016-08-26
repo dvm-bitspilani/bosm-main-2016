@@ -3,7 +3,8 @@ $('.textField').click(function(){
   $('.logo').fadeOut();
   $('.mainNav').addClass('navLoad');
   $('.arrow').addClass('arrowShow');
-  $('.logo2,.logRegButton').fadeIn();
+  $('.logo2,.logRegButton,.marker').fadeIn();
+  $('.marker').css('display','flex');
 });
 
 
@@ -38,7 +39,18 @@ $(window).resize();
 // console.log($(tubes.get(x)).css('background','url:(../img/events/'+$(tubes.get(x)).attr('id')+'.svg)'));
   // tubes[x].css()'background-size','16vh 16vh');
 
+$('.marker').click(function(){
+  $('.outerMarkerWindow').fadeIn();
+  $('.outerMarkerWindow').css('display','flex');
+});
 
+$('.closeMarker,.outerOverlay').click(function(){
+  $('.outerMarkerWindow').fadeOut();
+});
+
+$(document).click(function(ev){
+  console.log(ev.target);
+})
 
 // puzzle js
 
