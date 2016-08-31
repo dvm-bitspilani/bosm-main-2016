@@ -163,6 +163,32 @@ html,body {
     height: 100vh;
 }
 
+
+.torch .baxCont{
+	width:50vw;
+}
+.baxCover{
+	background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0%;
+	text-align: center;
+	border-radius: 10px;
+	color: #126c9e;
+	padding: 30px;
+
+}
+
+@media screen and (max-width:600px) {
+	.baxCover{
+		padding: 10px;
+	}
+	.torch .baxCont{
+		width: 60vw;
+	}
+}
+
+.baxCover .baxText{
+	max-height: 50vh;
+}
+
 .baxHead {
 	margin-bottom: 15px;
 	font-size: 2.7em;
@@ -182,4 +208,34 @@ html,body {
 	.baxText {
 		font-size: 1em;
 	}
+}
+
+
+
+.torch {
+  width: 100vw;
+  height: 100vh;
+  background-color: #126C9E;
+  background-image: url('../img/torchbg.svg');
+  background-size: auto 95%;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  position: fixed;
+}
+
+@media screen and (max-width:900px) {
+	.torch{
+		background-position: bottom;
+	}
+}
+
+
+.extraEvents{
+	width: 100vw;
+	min-height: 100vh;
+  background-image: url('../img/corkboard.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
 }

@@ -239,7 +239,11 @@ text:not(.imp){
 	/*margin:1.5vh;*/
 	/*background: url('../img/tube.png') no-repeat;*/
 	background-size: 20vh 20vh;
+
 }
+
+
+
 
 .tube2 {
 
@@ -366,6 +370,15 @@ text:not(.imp){
 
 }
 
+.spin{
+  -webkit-animation: spinx 2.5s forwards;
+  -moz-animation: spin 2.5s forwards;
+}
+.move{
+  -webkit-animation: movex  2.5s forwards;
+  -moz-animation: movex 2.5s forwards;
+}
+
 @-webkit-keyframes Floatingx{
   from {-webkit-transform:translate(0, 0px);}
   65% {-webkit-transform:translate(0, 10px);}
@@ -376,6 +389,26 @@ text:not(.imp){
   from {-moz-transform:translate(0, 0px);}
   65% {-moz-transform:translate(0, 10px);}
   to {-moz-transform: translate(0, -0px);}
+}
+
+@-webkit-keyframes spinx{
+  0% {-webkit-transform:rotate(0deg);}
+  100% {-webkit-transform: rotate(360deg) ;}
+}
+
+@-moz-keyframes spin{
+  0% {-moz-transform:rotate(0deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+
+@-webkit-keyframes movex{
+  0% {-webkit-transform: translate(0vw,0);}
+  100% {-webkit-transform:   translate(100vw,0);}
+}
+
+@-moz-keyframes movex{
+  0% {-moz-transform: translate(0vw,0);}
+  100% {-moz-transform:  translate(100vw,0);}
 }
 
 /*=================FLIP TILE===================*/

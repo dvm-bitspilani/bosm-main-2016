@@ -680,6 +680,15 @@ var content={
 
 }
 
+$('.tube_path').click(function(){
+  $('.tube').removeClass('floating');
+  $('.tube').addClass('spin');
+  $('.tube_path').addClass('move');
+
+
+})
+
+
 $('.tube').click(function(){
   var type=$(this).attr('class').split(' ').pop();
   var sport=$(this).attr('type').split(' ');
