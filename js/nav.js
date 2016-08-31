@@ -18,8 +18,8 @@ var path=document.getElementById('curve');
 var hex=document.getElementById('navInner');
 var hx=hex.getBBox().width;
 var hy=hex.getBBox().height;
-hex.setAttribute('x',5+(window.innerWidth-hx)/2);
-hex.setAttribute('y',(window.innerHeight-hy)/2);
+hex.setAttribute('x',3+(window.innerWidth-hx)/2);
+hex.setAttribute('y',-10+(window.innerHeight-hy)/2);
 
 var footW=(window.innerWidth-football.getBBox().width)/2;
 var footH=(window.innerHeight-football.getBBox().height)/2
@@ -159,13 +159,13 @@ $('.ball:not(.noShow)').mouseenter(function(){
     animate.setAttribute('dur','0.5s');
     animate.beginElement();
 
-    if(type=='5'||type=='6'){
+    if(type=='5'||type=='6'||type=='9'){
 
     var boxW=$('#navInner').get(0).getBBox().width;
     var boxH=$('#navInner').get(0).getBBox().height;
     var animate=$(this).prev().prev().get(0).childNodes[3];
-    animate.setAttribute('from',(type=='6')?boxW-94:boxW-30);
-    animate.setAttribute('to',(type=='6')?'185.85605':'240.12735');
+    animate.setAttribute('from',(type=='6'||type=='9')?boxW-94:boxW-30);
+    animate.setAttribute('to',(type=='6'||type=='9')?'185.85605':'240.12735');
     animate.setAttribute('dur','0.5s');
     animate.beginElement();
   }
@@ -184,12 +184,12 @@ $('.ball:not(.noShow)').click(function(){
   // animate.setAttribute('dur','0.5s');
   animate.beginElement();
 
-  if(type1=='5'||type1=='6'){
+  if(type1=='5'||type1=='6'||type1=='9'){
   var boxW=$('#navInner').get(0).getBBox().width;
   var boxH=$('#navInner').get(0).getBBox().height;
   var animate2=$(this).prev().prev().get(0).childNodes[3];
-  animate2.setAttribute('to',(type=='6')?boxW-94:boxW-30);
-  animate2.setAttribute('from',(type1=='6')?'185.85605':'240.12735');
+  animate2.setAttribute('to',(type1=='6'||type1=='9')?boxW-94:boxW-30);
+  animate2.setAttribute('from',(type1=='6'||type1=='9')?'185.85605':'240.12735');
   animate2.setAttribute('dur','0.1s');
   animate2.beginElement();
   }
@@ -210,12 +210,12 @@ $('.ball:not(.noShow)').mouseleave(function(){
     animate.setAttribute('dur','0.5s');
     animate.beginElement();
 
-    if(type=='5'||type=='6'){
+    if(type=='5'||type=='6'||type=='9'){
     var boxW=$('#navInner').get(0).getBBox().width;
     var boxH=$('#navInner').get(0).getBBox().height;
     var animate=$(this).prev().prev().get(0).childNodes[3];
-    animate.setAttribute('to',(type=='6')?boxW-94:boxW-30);
-    animate.setAttribute('from',(type=='6')?'185.85605':'240.12735');
+    animate.setAttribute('to',(type=='6'||type=='9')?boxW-94:boxW-30);
+    animate.setAttribute('from',(type=='6'||type=='9')?'185.85605':'240.12735');
     animate.setAttribute('dur','0.5s');
     animate.beginElement();
 

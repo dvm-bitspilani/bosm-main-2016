@@ -245,3 +245,141 @@ html,body {
 position: relative;
 padding: 30px 50px;
 }
+
+.eventsWrap tspan{
+	cursor: pointer;
+}
+
+
+.profShow{
+	width: 100vw;
+  height: 100vh;
+  background-image: url('../img/lagoriBack.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+}
+
+
+.profShow .overlay{
+	width: 100vw;
+  height: 100vh;
+	z-index: -1;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top:0
+	left:0;
+}
+
+.profShow .profLogo{
+	position: relative;
+	top:30px;
+	left: 30px;
+}
+
+.profShow .profLogo img{
+	max-width: 75%;
+}
+
+
+@font-face {
+	font-family: 'Web Serveroff';
+	src: url('../Web Serveroff.ttf');
+}
+
+.sideBar{
+	position: relative;
+	top:250px;
+	overflow: hidden;
+	font-family: 'Web Serveroff';
+}
+
+
+
+
+.sideBar p{
+	float: left;
+	font-size: 1.5em;
+	background-color: #0a0a0a;
+	padding-right: 14px;
+padding-top: 14px;
+padding-bottom: 14px;
+text-align: right;
+padding-left: 55px;
+	margin: 1px 0 0;
+	color: #fffbf9;
+	clear: both;
+}
+.sideBar h2{
+	float: left;
+	margin: 0;
+	background-color: #39bc27;
+	padding: 5px 20px;
+	color: #fffbf9;
+	font-size: 2.7em;
+	clear: both;
+	text-align: right;
+padding-right: 14px;
+padding-left: 95px;
+padding-top: 14px;
+}
+
+
+@media screen and (max-width:600px) {
+	.sideBar p{
+		font-size: 1.2em;
+	}
+
+	.sideBar h2{
+		font-size: 1.6em;
+	}
+}
+
+
+
+.profShow .baxCont{
+	width: 70vw;
+	/*justify-content: end;*/
+	margin: 0;
+	font-family: 'Web Serveroff';
+
+}
+
+.profShow .baxCover{
+	background-color: rgba(10,10,10,0.9);
+	color: #fffbf9;
+	top: 13vh;
+	position: relative;
+	border-radius: 3px;
+	text-align: left;
+	font-size: 1.3em !important;
+}
+
+@media only screen and (max-width: 600px) {
+	.profShow .baxText {
+		font-size: 1.1em;
+	}
+
+	.profShow .profLogo img{
+		left: calc(50% - 70px);
+		position: relative;
+	}
+
+	.sideBar{
+		top: 50px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.sideBar h2{
+		padding-left: 77px;
+		font-size: 1.7em;
+	}
+
+	.sideBar p{
+		padding-left: 22px;
+		font-size: 1.2em;
+	}
+}
