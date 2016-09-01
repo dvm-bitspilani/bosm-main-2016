@@ -246,7 +246,10 @@ html,body {
 
 .eventsWrap{
 position: relative;
-padding: 30px 50px;
+padding: 0px 50px;
+overflow-y: scroll;
+height: 86vh;
+top: 7vh;
 }
 
 .eventsWrap tspan{
@@ -438,7 +441,7 @@ padding-top: 14px;
 
 .arrowHead img{
 	cursor: pointer;
-	
+
 	width:26px;
 	background: white;
 	border-radius: 50%;
