@@ -732,12 +732,12 @@ $('.tube').click(function(){
   $('.eventsWrap svg tspan').attr('id',"modal-trigger");
   $('.eventsWrap svg tspan').click(function(){
     heading = $(this).html();
-    name=$(this).html().toLowerCase().replace(' ','');
+    name=$(this).html().toLowerCase().replace(/ /g,'');
     if($(this).attr('data-key')==undefined){
-      name=name.replace('-','');
+      name=name.replace(/-/g,'');
     }
     else {
-      name=name.replace('-','')+$(this).attr('data-key');
+      name=name.replace(/-/g,'')+$(this).attr('data-key');
     }
     var text="Coming Soon";
     $('.cd-modal-content').html('');
