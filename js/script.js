@@ -733,7 +733,12 @@ $('.tube').click(function(){
   $('.eventsWrap svg tspan').click(function(){
     heading = $(this).html();
     name=$(this).html().toLowerCase().replace(' ','');
-    name=name.replace('-','')+$(this).attr('data-key');
+    if($(this).attr('data-key')==undefined){
+      name=name.replace('-','');
+    }
+    else {
+      name=name.replace('-','')+$(this).attr('data-key');
+    }
     var text="Coming Soon";
     $('.cd-modal-content').html('');
     var url="./2016/events/";
