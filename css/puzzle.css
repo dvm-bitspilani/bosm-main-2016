@@ -238,6 +238,9 @@ html,body {
   background-repeat: no-repeat;
   background-position: center;
 	overflow: hidden;
+	position: absolute;
+	right: 100vw;
+	z-index: 2;
 }
 
 
@@ -250,6 +253,15 @@ padding: 30px 50px;
 	cursor: pointer;
 }
 
+
+.eventsWrap svg{
+	position: relative;
+}
+
+.centerEvent{
+	position: relative;
+	margin: auto;
+}
 
 .profShow{
 	width: 100vw;
@@ -382,4 +394,54 @@ padding-top: 14px;
 		padding-left: 22px;
 		font-size: 1.2em;
 	}
+}
+
+/*
+.eventData{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.6);
+}
+
+.eventData .wrap{
+	width: 50vw;
+	left:25vw;
+	height: 50vh;
+	background: url('../img/note.svg');
+	background-size: cover;
+}*/
+
+
+
+
+
+.arrowHead{
+  position: absolute;
+  z-index: 2;
+  right: 54px;
+	top:54px
+}
+
+.arrowHead img{
+	cursor: pointer;
+	
+	width:26px;
+	background: white;
+	border-radius: 50%;
+	padding: 14px;
+
 }

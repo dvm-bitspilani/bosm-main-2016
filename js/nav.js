@@ -13,6 +13,8 @@ spin.setAttribute('to','360 '+cx+' '+cy);
 var ballPlace=[];
 var balls,pathMove;
 function drawPath(){
+  calcTop();
+  
 balls=Array.prototype.slice.call( document.getElementsByClassName('ball'));
 var path=document.getElementById('curve');
 var hex=document.getElementById('navInner');
@@ -41,6 +43,52 @@ balls.map(function(ele){
 
 
 }
+
+var typePos,t;
+function calcTop(){
+
+if(window.outerWidth<600){
+  $('.eventsWrap svg').attr('width','200px');
+  $('.eventsWrap svg').attr('height','200px');
+}
+else {
+  $('.eventsWrap svg').attr('width','250px');
+  $('.eventsWrap svg').attr('height','250px');
+}
+
+if($('.eventsWrap svg').parent().attr('class')=='centerEvent'){
+  $('.eventsWrap svg').unwrap();
+}
+
+ typePos={},t=0;
+$('.eventsWrap svg').each(function(){
+  var ele = $(this);
+  var topType=$(this).position().top;
+  var objWidth=$(this).outerWidth();
+
+  if(topType in typePos){
+    $(ele).attr('type',t);
+    typePos[topType].push(ele);
+  }
+  else{
+    t++;
+    typePos[topType]=[]
+    $(ele).attr('type',t);
+    typePos[topType].push(ele);
+  }
+});
+
+var html="<div class='centerEvent'></div>";
+
+for(var i=1;i<=Object.keys(typePos).length;i++){
+  var eleArr=$(".eventsWrap svg[type="+i+"]");
+  if(eleArr.parent().attr('class')!='centerEvent')
+  eleArr.wrapAll(html);
+  var objWidth=$('.eventsWrap svg').outerWidth();
+  eleArr.parent().css('width',eleArr.length*objWidth);
+}
+}
+
 drawPath();
 window.onresize=drawPath;
 

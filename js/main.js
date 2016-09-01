@@ -1,5 +1,5 @@
 jQuery(document).ready(function(){
-	var modalTriggerBts = $('div[data-type="cd-modal-trigger"]'),
+	var modalTriggerBts = $('*[data-type="cd-modal-trigger"]'),
 		coverLayer = $('.cd-cover-layer');
 
 	/*

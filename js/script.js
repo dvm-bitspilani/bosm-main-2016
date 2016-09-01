@@ -49,7 +49,7 @@ $('.closeMarker,.outerOverlay').click(function(){
 });
 
 $(document).click(function(ev){
-  console.log(ev.target);
+  // console.log(ev.target);
 })
 
 // puzzle js
@@ -680,13 +680,22 @@ var content={
 
 }
 
-$('.tube_path').click(function(){
-  $('.tube').removeClass('floating');
-  $('.tube').addClass('spin');
-  $('.tube_path').addClass('move');
-
+$('.miscellaneous,.online').click(function(){
+  // $('.tube').removeClass('floating');
+  // $('.tube').addClass('spin');
+  // $('.tube_path').addClass('move');
+  $('.extraEvents').animate({
+    right:0
+  },1800);
 
 })
+
+
+$('.arrowHead').click(function(){
+  $('.extraEvents').animate({
+    right:'100vw'
+  },1800);
+});
 
 
 $('.tube').click(function(){
@@ -714,3 +723,29 @@ $('.tube').click(function(){
 
 
 });
+
+
+
+
+// extra events  $('.eventsWrap svg tspan').attr('id',"modal-trigger");
+  $('.eventsWrap svg tspan').attr('data-type',"cd-modal-trigger");
+  $('.eventsWrap svg tspan').attr('id',"modal-trigger");
+  $('.eventsWrap svg tspan').click(function(){
+    heading = $(this).html();
+    name=$(this).html().toLowerCase().replace(' ','');
+    name=name.replace('-','')+$(this).attr('data-key');
+    var text="Coming Soon";
+    $('.cd-modal-content').html('');
+    var url="./2016/events/";
+    $.ajax({
+      type:'POST',
+      url:url+name+'/',
+      crossDomain:true,
+      success:function(data){
+          text=response.content;
+      }
+
+    });
+    content='<h1 style="text-transform:capitalize">'+heading+'</h1><p>'+text+'</p>';
+    $('.cd-modal-content').html(content);
+  });
