@@ -746,11 +746,11 @@ $('.tube').click(function(){
       type:'POST',
       url:url+name+'/',
       crossDomain:true,
-      success:function(data){
+      success:function(response){
           text=response.content;
+          content='<h1 style="text-transform:capitalize">'+heading+'</h1><p>'+text+'</p>';
+          $('.cd-modal-content').html(content);
       }
 
     });
-    content='<h1 style="text-transform:capitalize">'+heading+'</h1><p>'+text+'</p>';
-    $('.cd-modal-content').html(content);
   });
