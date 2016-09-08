@@ -448,3 +448,180 @@ padding-top: 14px;
 	padding: 14px;
 
 }
+
+
+
+
+/*     Extra Events           */
+
+
+.events{
+	background: white;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top:0;
+}
+
+h1 {
+	margin: 0;
+	font-size: 4em;
+}
+.ee-heading {
+	height: 20%;
+	width: 100%;
+	margin: 0;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	text-align: center;
+	font-family: 'PT Sans', sans-serif;
+
+}
+
+.ee-t {
+	font-family: 'PT Sans', sans-serif;
+
+	width:100%;
+	height:80%;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	overflow-y: scroll;
+	padding-top: 8px;
+}
+
+.ee-box {
+	cursor: pointer;
+	padding: 18px;
+	height: 20%;
+	width: 10%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	text-align: center;
+	transition: all 0.3s;
+}
+
+
+.ee-box:hover {
+	background: #eee;
+	border-radius: 4px;
+	transform: scale(1.1,1.1);
+}
+
+
+.ee-icon {
+	height: 70%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center center;
+}
+
+.ee-event {
+
+	height: 20%;
+	width: 100%;
+}
+
+#bosms {
+	background-image: url("../img/extraEvents/send_sms-512.png");
+}
+
+#capturact {
+	background-image: url("../img/extraEvents/device-camera-icon.png");
+}
+
+#crackodial {
+	background-image: url("../img/extraEvents/crack.png");
+}
+#boxcricket {
+	background-image: url("../img/extraEvents/cricket-512.png");
+}
+#photobooth {
+	background-image: url("../img/extraEvents/Photobooth-icon.png");
+}
+#ignition {
+	background-image: url("../img/extraEvents/burn-burning-fire-flame-heat-icon--icon-search-engine-20.png");
+}
+#antichess {
+	background-image: url("../img/extraEvents/Chess-Game.png");
+}
+#sportware {
+	background-image: url("../img/extraEvents/589354-refer_top_jersey-512.png");
+}
+#photographyworkshop {
+	background-image: url("../img/extraEvents/hinh-anh.png");
+}
+#streetfootball {
+	background-image: url("../img/extraEvents/Football_icon_png.png");
+}
+#bosmroulette {
+	background-image: url("../img/extraEvents/roulette-512.png");
+}
+#humanfoosball {
+	background-image: url("../img/extraEvents/203052-200.png");
+}
+#spotlight {
+	background-image: url("../img/extraEvents/Spotlight-Performance-Icon.jpg");
+}
+#virtualreality {
+	background-image: url("../img/extraEvents/cardboard_icon-512_green.png");
+}
+#airrifle {
+	background-image: url("../img/extraEvents/shooting-air_gun-rifle-pistol-olympics-games-sports-512.png");
+}
+#moviescreening {
+	background-image: url("../img/extraEvents/download.png");
+}
+#spartandash {
+	background-image: url("../img/extraEvents/spartan-icon-29.png");
+}
+#cricketquiz {
+	background-image: url("../img/extraEvents/speech_bubble_question-512.png");
+}
+#matchscreening {
+	background-image: url("../img/extraEvents/tv-icon-23.png");
+}
+#junoon {
+	background-image: url("../img/extraEvents/44-512.png");
+}
+#bosmlive {
+	background-image: url("../img/extraEvents/live_icon.png");
+}
+#pictionary {
+	background-image: url("../img/extraEvents/pictionary-hasbro-3220843-200-200.gif");
+}
+#taboo {
+	background-image: url("../img/extraEvents/taboo.png");
+}
+
+@media only screen and (max-width: 900px) {
+.ee-box {
+
+	height: 20vh;
+	width: 30vw;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	text-align: center;
+}
+
+}
+@media only screen and (max-width: 400px) {
+.ee-box {
+
+	height: 20vh;
+	width: 45vw;
+	display: flex;
+	flex-direction:column;
+	justify-content:space-around;
+	text-align: center;
+}
+
+}

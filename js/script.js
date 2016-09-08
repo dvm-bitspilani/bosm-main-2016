@@ -728,10 +728,10 @@ $('.tube').click(function(){
 
 
 // extra events  $('.eventsWrap svg tspan').attr('id',"modal-trigger");
-  $('.eventsWrap svg tspan').attr('data-type',"cd-modal-trigger");
-  $('.eventsWrap svg tspan').attr('id',"modal-trigger");
-  $('.eventsWrap svg tspan').click(function(){
-    heading = $(this).html();
+  $('.ee-box').attr('data-type',"cd-modal-trigger");
+  $('.ee-box').attr('id',"modal-trigger");
+  $('.ee-box').click(function(){
+    heading = $(this).find('.ee-event').html();
     name=$(this).html().toLowerCase().replace(/ /g,'');
     if($(this).attr('data-key')==undefined){
       name=name.replace(/-/g,'');

@@ -14,7 +14,7 @@ var ballPlace=[];
 var balls,pathMove;
 function drawPath(){
   calcTop();
-  
+
 balls=Array.prototype.slice.call( document.getElementsByClassName('ball'));
 var path=document.getElementById('curve');
 var hex=document.getElementById('navInner');
@@ -105,14 +105,15 @@ function move(type='off'){
 var path=document.getElementById('pathMove');
 
 function moveSingleBall(ele,type){
-
   var animate=ele.childNodes[ele.childNodes.length-2];
   var nav=document.getElementById('navInner').getBBox();
   if(type=='off'){
+    if(ele.getAttribute('page')==10)
+      ele.style.display='none';
     $('.arrow').removeClass('arrowShow');
     $('.logo2,.logRegButton,.marker').fadeOut();
-    var eleX=ele.getBBox().x+(ele.getBBox().width/2);
-    var eleY=ele.getBBox().y+(ele.getBBox().height/2);
+    var eleX=ele.getBBox().x + (ele.getBBox().width/2);
+    var eleY=ele.getBBox().y + (ele.getBBox().height/2);
     ballPlace.push({
       ele:ele,
       x:(nav.width/2)-eleX,
@@ -124,6 +125,8 @@ function moveSingleBall(ele,type){
     animate.beginElement();
   }
   else if(type=='on'){
+    if(ele.getAttribute('page')==10)
+      ele.style.display='block';
     $('.arrow').addClass('arrowShow');
     $('.logo2,.logRegButton,.marker').fadeIn();
     $('.marker').css('display','flex');
@@ -182,6 +185,7 @@ $('#bc').click(function(){
   $('.logo2,.logRegButton,.marker').fadeIn();
   $('.marker').css('display','flex');
   flag=true;
+  console.log(flag);
   $('.arrow').addClass('arrowShow');
     $(this).removeClass('menuOff');
     $(this).addClass('menuOn');
