@@ -731,14 +731,16 @@ $('.tube').click(function(){
   $('.ee-box').attr('data-type',"cd-modal-trigger");
   $('.ee-box').attr('id',"modal-trigger");
   $('.ee-box').click(function(){
+    // console.log($(this).find('.ee-event').html());
     heading = $(this).find('.ee-event').html();
-    name=$(this).html().toLowerCase().replace(/ /g,'');
+    name=heading.toLowerCase().replace(/ /g,'');
     if($(this).attr('data-key')==undefined){
       name=name.replace(/-/g,'');
     }
     else {
       name=name.replace(/-/g,'')+$(this).attr('data-key');
     }
+
     var text="Coming Soon";
     $('.cd-modal-content').html('');
     var url="./2016/events/";
