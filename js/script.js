@@ -39,7 +39,7 @@ $(window).resize();
 // console.log($(tubes.get(x)).css('background','url:(../img/events/'+$(tubes.get(x)).attr('id')+'.svg)'));
   // tubes[x].css()'background-size','16vh 16vh');
 
-$('.marker').click(function(){
+$('.marker:not(.blog)').click(function(){
   $('.outerMarkerWindow').fadeIn();
   $('.outerMarkerWindow').css('display','flex');
 });
